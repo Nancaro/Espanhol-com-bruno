@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Aulas de espanhol online com professor argentino. Cursos para viagens, trabalho e exames DELE/SIELE. Aula experimental gratuita. Reserve já!" />
+<meta name="keywords" content="aulas de espanhol online, curso de espanhol para brasileiros, preparatório SIELE, professor nativo espanhol, aula de conversação espanhol" />
+<title>Aulas de Espanhol Online | Espanhol com Bruno — Professor Nativo 🇦🇷</title>
+
+<!-- Fonts: Red Hat Display para títulos, Inter para corpo (similar Avenir), Outfit para destacados -->
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+  /* Variables de colores - Identidad Visual */
+  :root {
+    --amarelo-dourado: #FFCD3C;
+    --azul-profundo: #1F3C88;
+    --branco: #FFFFFF;
+    --cinza-suave: #E8E8E8;
+    --cinza-texto: #4A5568;
+  }
+  /* Reset y base */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin:0; 
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+    background: var(--branco); 
+    color: var(--azul-profundo);
+    line-height: 1.6; 
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  header {
+    background: var(--cinza-suave);
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(31, 60, 136, 0.08);
+  }
+  header .flag {
+    height: 28px;
+    margin-right: 0.75rem;
+  }
+  header .logo-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+  header .logo-image {
+    height: 40px;
+    width: auto;
+    max-width: 200px;
+  }
+  header .logo-fallback {
+    display: flex;
+    align-items: center;
+  }
+  header .logo-text {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--azul-profundo);
+    margin-left: 0.5rem;
+  }
+  header .yerba-icon {
+    font-size: 1.8rem;
+    color: var(--amarelo-dourado);
+  }
+  header .social-icons a {
+    margin-left: 0.8rem;
+  }
+  header .social-icons .social-icon {
+    width: 26px;
+    height: 26px;
+    vertical-align: middle;
+  }
+
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem .75rem 3rem;
+  }
+
+  /* Hero */
+  .hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1F3C88 0%, #2A4A9B 100%);
+  color: #fff;
+  padding: 3.5rem 2rem;
+  border-radius: 22px;
+  max-width: 1100px;
+  margin: 2rem auto 3rem auto;
+  box-shadow: 0 8px 32px rgba(31, 60, 136, 0.2);
+  gap: 3.5rem;
+}
+.hero-img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 180px;
+}
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 5px solid #FFCD3C;
+  object-fit: cover;
+  background: #fff;
+  margin-bottom: 1.1rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+.badge.left-badge {
+  align-self: flex-start;
+  background: #FFCD3C;
+  color: #1F3C88;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  padding: 0.7rem 1.2rem 0.5rem 1.2rem;
+  border-radius: 25px;
+  font-size: 1.03rem;
+  margin-top: 0;
+  box-shadow: 0 2px 8px rgba(255,205,60,0.22);
+  text-align: left;
+  min-width: 220px;
+  max-width: 260px;
+}
+.slogan {
+  color: #1F3C88;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-top: 0.25em;
+  letter-spacing: 0.01em;
+  opacity: 0.97;
+}
+.hero-content {
+  flex: 1;
+  min-width: 280px;
+  max-width: 650px;
+  text-align: left;
+}
+.hero-content h1 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 700;
+  font-size: 2.3rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.hero-content p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.hero-buttons {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 850px) {
+  .hero-flex {
+    flex-direction: column;
+    padding: 2.2rem 1rem;
+    gap: 2rem;
+    text-align: center;
+  }
+  .hero-img {
+    align-items: center;
+    min-width: 0;
+    margin-bottom: 1.2rem;
+  }
+  .badge.left-badge {
+    text-align: center;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .hero-content {
+    text-align: center;
+    max-width: 100%;
+  }
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+
+  /* Sobre */
+ .about-section {
+  margin-bottom: 3rem;
+}
+.about-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.about-image {
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  flex-shrink: 0;
+}
+.about-text {
+  text-align: justify;
+  max-width: 700px;
+}
+.about-text h2 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  color: #1F3C88; /* azul-profundo */
+  letter-spacing: -0.01em;
+}
+.about-text p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  color: #4A5568; /* cinza-texto */
+  line-height: 1.7;
+  margin-bottom: 1.3rem;
+}
+.btn-primary {
+  background: #FFCD3C; /* amarelo-dourado */
+  color: #1F3C88;
+  border: none;
+  padding: 0.875rem 1.75rem;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 16px rgba(255, 205, 60, 0.3);
+}
+.btn-primary:hover {
+  background: #E6B631;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 205, 60, 0.4);
+}
+
+/* Responsive: imagen arriba en móviles */
+@media (max-width: 700px) {
+  .about-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-image {
+    margin-bottom: 1.5rem;
+  }
+}
+
+  /* Servicios */
+  #services {
+    margin-bottom: 3rem;
+  }
+  #services h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--azul-profundo);
+    text-align: center;
+    letter-spacing: -0.01em;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1.8rem;
+  }
+  .card {
+    background: var(--branco);
+    border: 1px solid var(--cinza-suave);
+    border-radius: 12px;
+    padding: 1.5rem 1.25rem;
+    box-shadow: 0 4px 16px rgba(31, 60, 136, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(31, 60, 136, 0.12);
+  }
+  .card h3 {
+    margin: 0 0 0.75rem 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 600;
+    color: var(--azul-profundo);
+    font-size: 1.25rem;
+  }
+  .card p {
+    flex-grow: 1;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--cinza-texto);
+    line-height: 1.6;
+  }
+  .card .price {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin: 1.2rem 0 1rem 0;
+    color: var(--amarelo-dourado);
+  }
+  .card button {
+    background: var(--azul-profundo);
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    color: var(--branco);
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  .card button:hover {
+    background: #2A4A9B;
+    transform: translateY(-2px);
+  }
+
+  .card .icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Planos & Preços */
+  #prices {
+    margin-bottom: 3rem;
+  }
+  #prices h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--azul-profundo);
+    text-align: center;
+    letter-spacing: -0.01em;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  th, td {
+    padding: 1rem 0.8rem;
+    border: 1px solid var(--cinza-suave);
+  }
+  th {
+    background-color: var(--azul-profundo);
+    color: var(--branco);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 600;
+  }
+  .price-cta {
+    background: var(--amarelo-dourado);
+    color: var(--azul-profundo);
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+  }
+  .price-cta:hover {
+    background: #E6B631;
+    transform: translateY(-2px);
+  }
+  .promo {
+    margin-top: -1rem;
+    color: #b83414;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  /* Processo */
+  #process {
+    margin-bottom: 3rem;
+  }
+  #process h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--azul-profundo);
+    text-align: center;
+    letter-spacing: -0.01em;
+  }
+  .process-step {
+    display: flex;
+    align-items: center;
+    max-width: 700px;
+    margin: 1rem auto;
+  }
+  .process-step .icon {
+    background: var(--amarelo-dourado);
+    color: var(--azul-profundo);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-right: 1.2rem;
+    box-shadow: 0 4px 12px rgba(255, 205, 60, 0.3);
+  }
+  .process-step p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+    color: var(--cinza-texto);
+    line-height: 1.6;
+  }
+
+  /* Depoimentos */
+  #testimonials {
+    margin-bottom: 3rem;
+  }
+  #testimonials h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--azul-profundo);
+    text-align: center;
+    letter-spacing: -0.01em;
+  }
+  .testimonials-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  .testimonial-card {
+    background: var(--branco);
+    border: 1px solid var(--cinza-suave);
+    max-width: 300px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(31, 60, 136, 0.08);
+    transition: all 0.3s ease;
+  }
+  .testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(31, 60, 136, 0.12);
+  }
+  .testimonial-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.6rem;
+  }
+  .testimonial-card p {
+    font-size: 0.95rem;
+    color: #222;
+  }
+  .testimonial-card .name {
+    margin-top: 0.6rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--azul);
+  }
+  .testimonial-cta {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .testimonial-cta button {
+    background: var(--amarelo-dourado);
+    color: var(--azul);
+    font-weight: 700;
+    padding: 0.6rem 1.3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  .testimonial-cta button:hover {
+    background: rgba(255, 205, 60, 0.3);
+  
+  }
+
+  /* Material & Demo */
+  #material {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  #material h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    color: var(--azul);
+  }
+  #material a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--amarelo);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  #material a:hover {
+    text-decoration: underline;
+  }
+
+  /* FAQ */
+  #faq {
+    margin-bottom: 3rem;
+  }
+  #faq h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    color: var(--azul);
+    text-align: center;
+  }
+  #faq details {
+    margin-bottom: 1rem;
+    border: 1px solid var(--cinza);
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    background: var(--branco);
+  }
+  #faq summary {
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1.05rem;
+  }
+  #faq p {
+    margin-top: 0.5rem;
+  }
+
+  /* Contato */
+  #contact {
+    max-width: 600px;
+    margin: 0 auto 4rem;
+    padding: 1rem;
+    border: 1px solid var(--cinza);
+    border-radius: 10px;
+    background: var(--cinza);
+  }
+  #contact h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    color: var(--azul);
+    text-align: center;
+  }
+  #contact form {
+    display: flex;
+    flex-direction: column;
+  }
+  #contact label {
+    margin: 0.5rem 0 0.2rem;
+    font-weight: 600;
+  }
+  #contact input, #contact select, #contact textarea {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 1rem;
+  }
+  #contact textarea {
+    resize: vertical;
+  }
+  #contact button {
+    margin: 1.2rem 0 0;
+    background: var(--amarelo);
+    color: var(--azul);
+    border: none;
+    padding: 0.75rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  #contact button:hover {
+    background: #e6b631;
+  }
+  /* Checkbox LGPD */
+  .lgpd-consent {
+    margin-top: 0.7rem;
+    font-size: 0.85rem;
+  }
+  .lgpd-consent input {
+    margin-right: 0.5rem;
+  }
+.btn-secondary {
+  border-width: 2.5px;
+  font-size: 1.08rem;
+  background: transparent;
+  border: 2px solid var(--amarelo-dourado);
+  color: var(--amarelo-dourado);
+  padding: 0.75rem 1.5rem;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: none;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background: var(--amarelo-dourado);
+  color: var(--azul-profundo);
+  transform: translateY(-2px);
+}
+  /* Footer */
+  footer {
+    background: var(--azul-profundo);
+    color: var(--branco);
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  footer a {
+    color: var(--amarelo-dourado);
+    margin: 0 0.8rem;
+    text-decoration: none;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* WhatsApp flotante */
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--amarelo);
+    color: var(--azul);
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    filter: drop-shadow(0 1px 3px rgba(0,0,0,0.3));
+    z-index: 999;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .whatsapp-float:hover {
+    background: #e6b631;
+  }
+
+  /* Modal para precios */
+  .modal-overlay {
+    position: fixed;
+    top:0; left:0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .modal {
+    background: var(--branco);
+    padding: 1.75rem 2rem;
+    border-radius: 10px;
+    max-width: 480px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+  }
+  .modal h3 {
+    margin-top: 0;
+    color: var(--azul);
+    font-family: 'Red Hat Display', sans-serif;
+  }
+  .modal table {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .modal-close {
+    background: var(--azul);
+    color: var(--branco);
+    border: none;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-top: 1rem;
+    float: right;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+    .hero p {
+      font-size: 1rem;
+    }
+    .btn-primary, .btn-secondary {
+      display: block;
+      margin: 0.5rem auto;
+      text-align: center;
+    }
+    header {
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
+    }
+    header .social-icons {
+      margin-top: 0.5rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .hero h1 {
+      font-size: 1.7rem;
+    }
+    .cards {
+      grid-template-columns: 1fr;
+    }
+    .process-step {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .process-step .icon {
+      margin-bottom: 0.4rem;
+    }
+  }
+  .benefits {
+  background: #FFFBE8;
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  margin: 2rem auto 2rem auto;
+  max-width: 700px;
+  box-shadow: 0 2px 12px rgba(255,205,60,0.13);
+}
+.benefits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.15rem;
+  color: #1F3C88;
+}
+.benefits li {
+  margin-bottom: 0.8em;
+  font-weight: 500;
+}
+.promo-banner {
+  background: #ffd6d6;
+  color: #b83414;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(255,0,0,0.08);
+}
+</style>
+</head>
+
+<body>
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg" alt="Bandeira espanhola" class="flag" />
+  <div class="logo-container">
+    <!-- LOGO CORREGIDO: sin onerror -->
+    <img src="https://i.ibb.co/LXcZWm0K/2-removebg-preview-1.png" alt="Logo Espanhol com Bruno" class="logo-image" />
+    <div class="logo-fallback" style="display: none;">
+      <span class="yerba-icon">🧉</span>
+      <div class="logo-text">Espanhol com Bruno</div>
+    </div>
+  </div>
+  <nav class="social-icons" aria-label="Redes sociais">
+    <a href="https://www.instagram.com/espanol.bruno" target="_blank" rel="noopener">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="social-icon" />
+    </a>
+    <a href="https://wa.me/98986070648" target="_blank" rel="noopener">
+      <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" class="social-icon" />
+    </a>
+  </nav>
+</header>
+
+  <main>
+ <section class="hero-flex">
+  <div class="hero-img">
+    <img src="https://i.ibb.co/fYhQkTQ1/Dise-o-sin-t-tulo-1-1.png" alt="Professor argentino" class="profile-pic" />
+    <div class="badge left-badge">
+      Professor nativo (Argentina) • Formado em Letras • +40 aprovações SIELE/DELE
+      <div class="slogan">Seu aprendizado é nossa prioridade</div>
+    </div>
+  </div>
+  <div class="hero-content">
+    <h1>Aprenda espanhol em 10 meses e fale com confiança em viagens, no trabalho e no dia a dia</h1>
+    <p>Aulas 100% online com professor argentino, materiais exclusivos e foco total na conversação.<br><strong>Aula experimental gratuita!</strong></p>
+    <div class="hero-buttons">
+      <button class="btn-primary" onclick="location.href='#contact'">Reservar aula experimental</button>
+      <button class="btn-secondary" onclick="location.href='#prices'">Ver planos e preços</button>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about-section">
+  <div class="about-flex">
+    <img src="https://i.ibb.co/vChSVySk/SNOW-20240229-123018-933.jpg" alt="Bruno Aguirre, professor de espanhol" class="about-image" />
+    <div class="about-text">
+      <h2>Sou Bruno Aguirre — seu professor de espanhol</h2>
+      <p>
+        Sou Bruno Aguirre, professor nativo da Argentina, formado em Letras e especializado no ensino de espanhol para brasileiros. Tenho mais de 4 anos de experiência e dezenas de alunos aprovados em exames como DELE e SIELE. Minhas aulas combinam método comunicativo, materiais próprios (PDFs, áudios, exercícios) e acompanhamento próximo por WhatsApp. Meu objetivo é te deixar falando espanhol com segurança em situações reais — viagens, trabalho ou provas.
+      </p>
+      <button class="btn-primary" onclick="location.href='#contact'">Agende sua aula experimental</button>
+    </div>
+  </div>
+</section>
+
+<section class="benefits">
+  <ul>
+    <li>✅ Fale espanhol em 10 meses</li>
+    <li>✅ Método comunicativo com foco em conversação</li>
+    <li>✅ Professor nativo argentino, formado em Letras</li>
+    <li>✅ Materiais exclusivos (PDFs, áudios, vídeos)</li>
+    <li>✅ +40 aprovações em SIELE e DELE</li>
+  </ul>
+</section>
+<div class="promo-banner">
+  ⚠️ Vagas limitadas! Garanta sua vaga hoje.
+</div>
+  
+
+    <section id="process" aria-labelledby="process-title">
+      <h2 id="process-title">Como funciona</h2>
+      <div class="process-step"><div class="icon" aria-hidden="true">1</div><p>Agende aula experimental</p></div>
+      <div class="process-step"><div class="icon" aria-hidden="true">2</div><p>Diagnóstico e plano personalizado</p></div>
+      <div class="process-step"><div class="icon" aria-hidden="true">3</div><p>Aulas ao vivo + materiais</p></div>
+      <div class="process-step"><div class="icon" aria-hidden="true">4</div><p>Acompanhamento por WhatsApp</p></div>
+      <div class="process-step"><div class="icon" aria-hidden="true">5</div><p>Certificado ao finalizar o curso</p></div>
+    </section>
+
+    <section id="testimonials" aria-labelledby="testimonials-title">
+      <h2 id="testimonials-title">Resultados & Depoimentos</h2>
+      <div class="testimonials-list">
+        <article class="testimonial-card" role="region" aria-label="Depoimento de Sandro Jansen">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Foto de Sandro Jansen" onerror="this.style.display='none';" />
+          <div style="color: #FFD700; margin-bottom: 0.5rem;">⭐⭐⭐⭐⭐</div>
+          <p>"Passei no SIELE B2 graças às aulas com Bruno. Muito foco no que realmente importa para o exame."</p>
+          <div class="name">Sandro Jansen • 34 anos, Policia</div>
+        </article>
+        <article class="testimonial-card" role="region" aria-label="Depoimento de Joana Costa">
+          <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Foto de Joana Costa" onerror="this.style.display='none';" />
+          <div style="color: #FFD700; margin-bottom: 0.5rem;">⭐⭐⭐⭐⭐</div>
+          <p>"Aprendi a falar para viagens, com confiança para me virar em qualquer país hispânico. 🇪🇸🇦🇷"</p>
+          <div class="name">Joana Costa • 28 anos, Publicitária</div>
+        </article>
+        <article class="testimonial-card" role="region" aria-label="Depoimento de Lucas Silva">
+          <img src="https://randomuser.me/api/portraits/men/72.jpg" alt="Foto de Lucas Silva" onerror="this.style.display='none';" />
+          <div style="color: #FFD700; margin-bottom: 0.5rem;">⭐⭐⭐⭐⭐</div>
+          <p>"As aulas VIP foram fundamentais para meu trabalho internacional. Recomendo muito! 🇲🇽"</p>
+          <div class="name">Lucas Silva • 41 anos, Consultor</div>
+        </article>
+      </div>
+      <div class="testimonial-cta">
+      <button onclick="window.open('https://www.instagram.com/stories/highlights/18427523725017133/', '_blank')">
+  Veja mais depoimentos
+</button>
+      </div>
+    </section>
+
+    <section id="material" aria-labelledby="material-title">
+      <h2 id="material-title">Material & Demo</h2>
+      <div style="background: var(--cinza); padding: 1rem; border-radius: 8px; margin: 1rem 0; display: inline-block;">
+        <a href="https://www.flipbookpdf.net/web/site/a26362bd20009a4a7e08450fec57f21b150b0d9b202509.pdf.html#page/1" style="color: var(--azul); font-weight: 700; text-decoration: none;">
+          📚 Veja uma aula completa e nosso material exclusivo
+        </a>
+      </div>
+      <div class="demo-flipbook">
+  <iframe 
+    src="https://www.flipbookpdf.net/web/site/a26362bd20009a4a7e08450fec57f21b150b0d9b202509.pdf.html"
+    width="100%" 
+    height="500" 
+    frameborder="0" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+    <section id="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Perguntas Frequentes</h2>
+      <details>
+        <summary>Duração do curso</summary>
+        <p>Cada nível (A1→A2, B1→B2, etc.) tem cerca de 85 horas-aula; ritmo comum: 2h/semana → cerca de 10 meses por nível.</p>
+      </details>
+      <details>
+        <summary>Férias e recesso</summary>
+        <p>Sem aulas de 10/12 a 16/01 e recesso na segunda semana de julho.</p>
+      </details>
+      <details>
+        <summary>Política de cancelamento</summary>
+        <p>Avise com 24h para reprogramar; faltas sem aviso contam como aula dada.</p>
+      </details>
+      <details>
+        <summary>Uso de imagem e gravação</summary>
+        <p>Não gravamos aulas sem seu consentimento; caso autorizem, pedimos autorização prévia.</p>
+      </details>
+        <details>
+    <summary>Preciso ter conhecimento prévio de espanhol?</summary>
+    <p>Não! As aulas começam do nível zero, mas se você já tiver algum conhecimento, fazemos um diagnóstico e adaptamos o plano para você.</p>
+  </details>
+  <details>
+    <summary>Posso fazer uma aula experimental gratuita?</summary>
+    <p>Sim! Você pode agendar sua primeira aula sem custo para conhecer a metodologia e já praticar comigo.</p>
+  </details>
+  <details>
+    <summary>As aulas são gravadas ou ao vivo?</summary>
+    <p>São 100% ao vivo, pela internet (Zoom ou Google Meet). Também forneço materiais em PDF, áudios e exercícios para revisar fora das aulas.</p>
+  </details>
+  <details>
+    <summary>Em quanto tempo consigo começar a falar espanhol?</summary>
+    <p>Meus alunos normalmente já conseguem se comunicar em situações simples (viagem, apresentações básicas) entre 2 e 3 meses de aula.</p>
+  </details>
+  <details>
+    <summary>Quais formas de pagamento aceitam?</summary>
+    <p>Você pode pagar via cartão de crédito, boleto ou PIX (pelo sistema seguro da Asaas).</p>
+  </details>
+  <details>
+    <summary>Recebo certificado?</summary>
+    <p>Sim, ofereço certificado digital de conclusão validado pelo MEC, válido como horas complementares em faculdades.</p>
+  </details>
+  <details>
+    <summary>Tenho suporte fora da aula?</summary>
+    <p>Sim! Você pode tirar dúvidas rápidas diretamente comigo via WhatsApp.</p>
+  </details>
+    </section>
+
+     <section id="planos-cursos" style="margin-bottom:3rem;">
+  <h2 style="text-align:center;font-family:'Red Hat Display',sans-serif;font-size:2rem;color:#1F3C88;margin-bottom:1.2rem;">
+    Planos e Cursos
+  </h2>
+  <div style="overflow-x:auto;">
+    <table style="width:100%;border-collapse:collapse;background:#fff;border-radius:14px;box-shadow:0 4px 16px rgba(31,60,136,0.07);margin-bottom:2rem;">
+      <thead style="background:#1F3C88;color:#fff;">
+        <tr>
+          <th style="padding:1rem;">Modalidade / Curso</th>
+          <th style="padding:1rem;">Preço no Pix (R$)</th>
+          <th style="padding:1rem;">Preço no Cartão (R$)</th>
+          <th style="padding:1rem;">Duração</th>
+          <th style="padding:1rem;">O que inclui</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Plano Autonomia (gravado)</td>
+          <td>999 à vista</td>
+          <td>12x R$ 105 (R$ 1.260)</td>
+          <td>10 meses</td>
+          <td>+100 vídeos gravados • Exercícios práticos • 1 plantão de dúvidas/mês (WhatsApp)</td>
+        </tr>
+        <tr>
+          <td>Plano Essencial (grupo)</td>
+          <td>2.200 à vista</td>
+          <td>12x R$ 200 (R$ 2.400)</td>
+          <td>10 meses (48 aulas)</td>
+          <td>4 aulas/mês em grupo (2h cada) • Material incluso • Lives de apoio • Certificado</td>
+        </tr>
+        <tr>
+          <td>Plano Personalizado (1:1)</td>
+          <td>3.000 à vista<br><span style="color:#b83414;">Fechamento imediato: R$ 3300</span></td>
+          <td>12x R$ 300 (R$ 3.600)</td>
+          <td>10 meses (48 aulas)</td>
+          <td>4 aulas/mês individuais (2h cada) • Conteúdo 100% adaptado • Suporte VIP no WhatsApp</td>
+        </tr>
+        <tr>
+          <td>Curso Premium Intensivo</td>
+          <td>4.500 à vista</td>
+          <td>6x R$ 420 (R$ 5.000)</td>
+          <td>6 meses</td>
+          <td>2h30/semana • Mentoria personalizada • Consultoria de viagem • Bônus culturais exclusivos</td>
+        </tr>
+        <tr>
+          <td>Curso DELE/SIELE</td>
+          <td>1.000 à vista</td>
+          <td>3x R$ 360 (R$ 1.080)</td>
+          <td>3 meses</td>
+          <td>Preparatório oficial • Simulados • Estratégias de prova • Feedback individual</td>
+        </tr>
+        <tr>
+          <td>Curso ENEM/UEMA</td>
+          <td>800 à vista</td>
+          <td>2x R$ 420 (R$ 840)</td>
+          <td>3 meses</td>
+          <td>Preparação para vestibulares • Gramática e leitura • Simulados práticos</td>
+        </tr>
+        <tr>
+          <td>Curso Intensivo Express</td>
+          <td>13.000 à vista</td>
+          <td>18x R$ 833 (R$ 15.000)</td>
+          <td>10 meses (255h)</td>
+          <td>5 dias/semana 2 horas aula • Conversação acelerada • Gramática prática • Material incluso</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="font-family:'Red Hat Display',sans-serif;font-size:1.4rem;color:#1F3C88;margin-bottom:1rem;text-align:center;">
+    Produtos Didáticos (Catálogo Digital)
+  </h3>
+  <div style="overflow-x:auto;">
+    <table style="width:100%;border-collapse:collapse;background:#fff;border-radius:14px;box-shadow:0 4px 16px rgba(31,60,136,0.07);">
+      <thead style="background:#1F3C88;color:#fff;">
+        <tr>
+          <th style="padding:1rem;">Produto</th>
+          <th style="padding:1rem;">Preço no Pix (R$)</th>
+          <th style="padding:1rem;">Preço no Cartão (R$)</th>
+          <th style="padding:1rem;">Duração</th>
+          <th style="padding:1rem;">O que inclui</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Livro Espanhol Básico + Intermediário + Avançado</td>
+          <td>199 cada / 499 combo</td>
+          <td>220 cada / 550 combo</td>
+          <td>Autoestudo</td>
+          <td>200+ páginas, áudios, vídeos, exercícios, alinhado SIELE</td>
+        </tr>
+        <tr>
+          <td>Guia Gramatical (bilíngue, vestibular)</td>
+          <td>150</td>
+          <td>170</td>
+          <td>Autoestudo</td>
+          <td>Regras gramaticais, exemplos, útil para exames</td>
+        </tr>
+        <tr>
+          <td>Simulados DELE/SIELE oficiais adaptados</td>
+          <td>99 cada pack / 250 completo</td>
+          <td>110 cada pack / 270 completo</td>
+          <td>Autoestudo</td>
+          <td>Simulados oficiais adaptados, prática intensiva</td>
+        </tr>
+        <tr>
+          <td>Ebook Frases Úteis para Viagem</td>
+          <td>50</td>
+          <td>60</td>
+          <td>Rápido</td>
+          <td>Expressões práticas, leitura fácil</td>
+        </tr>
+        <tr>
+          <td>Apostilla Cultural (Truco, Tango, Gastronomia, etc.)</td>
+          <td>50</td>
+          <td>60</td>
+          <td>Rápido</td>
+          <td>PDF rápido, curiosidades culturais</td>
+        </tr>
+        <tr>
+          <td>Pack 500 Filmes & Séries em Espanhol</td>
+          <td>50</td>
+          <td>60</td>
+          <td>Complementar</td>
+          <td>Lista completa de filmes e séries em espanhol</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+      <div style="text-align: center; margin-top: 1rem; color: var(--azul); font-weight: 600;">
+        ✅ Todos os pagamentos são realizados de forma segura através do sistema Asaas e formalizados por meio de contrato. Não haverá qualquer cobrança adicional.
+      </div>
+    </section>
+
+   <section id="contact" aria-labelledby="contact-title">
+  <h2 id="contact-title">Contato & Agendamento</h2>
+  <div style="max-width:600px;margin:0 auto;text-align:center;">
+    <p>Preencha o formulário abaixo para agendar sua aula experimental. Você será redirecionado para o Google Forms:</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4casXEppQRS6pHih8AjZGqTAKcHvMWAxSVI7QBt0UKMfVvA/viewform?usp=dialog" 
+       target="_blank" rel="noopener" 
+       style="display:inline-block;background:#FFCD3C;color:#1F3C88;font-weight:700;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-size:1.2rem;box-shadow:0 4px 16px rgba(255,205,60,0.3);margin-top:1.5rem;">
+      👉 Agendar aula experimental
+    </a>
+  </div>
+</section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <nav aria-label="Links do rodapé">
+      <a href="#about">Sobre</a>|
+      <a href="#services">Serviços</a>|
+      <a href="#prices">Preços</a>|
+      <a href="#testimonials">Depoimentos</a>|
+      <a href="#contact">Contato</a>|
+      <a href="#">Política de Privacidade (LGPD)</a>|
+      <a href="#">Termos</a>
+    </nav>
+    <p>CNPJ: 58062835000156 © 2024 Espanhol com Bruno</p>
+    <p>
+      Redes: 
+      <a href="https://www.instagram.com/espanol.bruno" target="_blank" rel="noopener">Instagram</a> | 
+      <a href="https://www.youtube.com/@EspanholcomBrunoYT" target="_blank" rel="noopener">YouTube</a> | 
+      <a href="mailto:brunoensaoluis@gmail.com">Email</a>
+    </p>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/98986070648" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="28" height="28">
+      <path d="M20.52 3.486A11.942 11.942 0 0012.03 0c-6.627 0-12 5.373-12 12 0 2.12.554 4.096 1.606 5.841L0 24l5.957-1.555a11.953 11.953 0 005.927 1.547c6.627 0 12-5.373 12-12a11.97 11.97 0 00-3.364-8.506zm-8.48 16.798c-1.85 0-3.646-.5-5.217-1.447l-.37-.223-3.54.922.95-3.46-.236-.377a8.51 8.51 0 011.391-10.93 8.337 8.337 0 0111.803 1.176 8.446 8.446 0 01-5.28 14.96zm4.422-6.096l-1.248-1.18c-.165-.16-.395-.235-.604-.202a133.38 133.38 0 00-1.87.39c-.118.03-.253.108-.37.276-.108.144-.253.37-.452.645-.185.25-.38.36-.534.336l-.93-.174a5.38 5.38 0 01-2.086-1.34 8.095 8.095 0 01-1.338-2.059c-.223-.445 0-.79.115-.928l.86-1.04c.15-.198.264-.252.436-.255l1.234-.01c.178 0 .392.066.597.295l1.042 1.078c.182.189.353.26.554.239a3.39 3.39 0 001.966-1.252c.365-.454.546-.977.533-1.555-.01-.545-.469-1.29-2.23-2.5-.613-.389-1.08-.517-1.55-.52-.445-.005-.9.11-1.297.337-.423.25-1.022.965-1.022 2.364 0 1.397 1.182 2.855 1.348 3.055.166.198 2.328 3.56 5.77 4.688.803.344 1.424.544 1.913.698a4.959 4.959 0 002.327.176c.71-.163 2.22-.907 2.534-1.786.315-.885.315-1.644.22-1.785-.099-.143-.354-.229-.74-.4z"/>
+    </svg>
+  </a>
+
+  <!-- Modal precios -->
+  <div class="modal-overlay" id="modalPrecos" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalPrecosTitle">
+    <div class="modal">
+      <h3 id="modalPrecosTitle">Planos e preços detalhados</h3>
+      <table role="table">
+        <thead>
+          <tr>
+            <th>Plano</th>
+            <th>Mensal</th>
+            <th>Pacote Completo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Essencial</strong><br><small>Grupo • 10 meses</small></td>
+            <td>R$ 220/mês</td>
+            <td><strong>R$ 2.000 à vista</strong><br><small>ou 10x R$ 210</small></td>
+          </tr>
+          <tr>
+            <td><strong>Premium</strong><br><small>Individual • 10 meses</small></td>
+            <td>R$ 650/mês</td>
+            <td><strong>R$ 5.850 à vista</strong><br><small>ou 10x R$ 620</small></td>
+          </tr>
+          <tr>
+            <td><strong>Intensivo</strong><br><small>2 meses • 85h</small></td>
+            <td>-</td>
+            <td><strong>R$ 1.500</strong><br><small>ou 2x R$ 800</small></td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="background: #f0f8ff; padding: 1rem; border-radius: 6px; margin-top: 1rem; text-align: center;">
+        <strong>💰 Economia de até R$ 650 no pacote completo!</strong><br>
+        <small>Garante sua vaga e não precisa renovar mensalmente</small>
+      </div>
+      <button class="modal-close" aria-label="Fechar modal">Fechar</button>
+    </div>
+  </div>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Add animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe cards and testimonials
+    document.querySelectorAll('.card, .testimonial-card, .process-step').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(el);
+    });
+
+    // Modal precios toggle
+    const btnVerPrecos = document.getElementById('btnVerPrecos');
+    const modalPrecos = document.getElementById('modalPrecos');
+    const btnCloseModal = modalPrecos.querySelector('.modal-close');
+
+    btnVerPrecos.addEventListener('click', () => {
+      modalPrecos.style.display = 'flex';
+      modalPrecos.setAttribute('aria-hidden', 'false');
+      btnCloseModal.focus();
+    });
+    btnCloseModal.addEventListener('click', () => {
+      modalPrecos.style.display = 'none';
+      modalPrecos.setAttribute('aria-hidden', 'true');
+      btnVerPrecos.focus();
+    });
+    // Cerrar modal con Escape
+    window.addEventListener('keydown', (e) => {
+      if(e.key === 'Escape' && modalPrecos.style.display === 'flex') {
+        modalPrecos.style.display = 'none';
+        modalPrecos.setAttribute('aria-hidden', 'true');
+        btnVerPrecos.focus();
+      }
+    });
+
+    // Enviar contato (demo)
+    document.getElementById('contact-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      // Aquí conectar con backend o integración Asaas + WhatsApp via API/external
+      alert('Obrigado pelo contato! Em breve responderemos via WhatsApp.');
+      e.target.reset();
+    });
+  </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97c7c90957f41cf5',t:'MTc1NzQzMjQzOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
