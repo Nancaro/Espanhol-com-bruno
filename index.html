@@ -3,1302 +3,1663 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Aulas de espanhol online com professor argentino. Cursos para viagens, trabalho e exames DELE/SIELE. Aula experimental gratuita. Reserve já!" />
-<meta name="keywords" content="aulas de espanhol online, curso de espanhol para brasileiros, preparatório SIELE, professor nativo espanhol, aula de conversação espanhol" />
-<title>Aulas de Espanhol Online | Espanhol com Bruno — Professor Nativo 🇦🇷</title>
-
-<!-- Fonts: Red Hat Display para títulos, Inter para corpo (similar Avenir), Outfit para destacados -->
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
+<meta name="description" content="Aulas de espanhol online com professor nativo argentino para brasileiros. Preparacao DELE/SIELE, viagem, carreira e vestibular. Aula experimental gratuita." />
+<meta name="keywords" content="aulas de espanhol online, professor nativo de espanhol, espanhol para brasileiros, preparacao DELE SIELE, curso de espanhol online" />
+<title>Espanhol com Bruno | Aulas de Espanhol Online com Professor Nativo</title>
+<link rel="icon" type="image/png" href="2-removebg-preview (1).png" />
+<link rel="canonical" href="https://www.espanholcombruno.com.br/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:site_name" content="Espanhol com Bruno" />
+<meta property="og:title" content="Espanhol com Bruno | Aulas de Espanhol Online com Professor Nativo" />
+<meta property="og:description" content="Aulas de espanhol online com professor nativo argentino para brasileiros. Preparacao DELE/SIELE, viagem, carreira e vestibular." />
+<meta property="og:url" content="https://www.espanholcombruno.com.br/" />
+<meta property="og:image" content="https://i.ibb.co/vChSVySk/SNOW-20240229-123018-933.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Espanhol com Bruno | Aulas de Espanhol Online com Professor Nativo" />
+<meta name="twitter:description" content="Aulas de espanhol online com professor nativo argentino para brasileiros. Aula experimental gratuita." />
+<meta name="twitter:image" content="https://i.ibb.co/vChSVySk/SNOW-20240229-123018-933.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Red+Hat+Display:wght@500;700;800&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Espanhol com Bruno",
+  "url": "https://www.espanholcombruno.com.br/",
+  "description": "Aulas de espanhol online com professor nativo argentino para brasileiros.",
+  "logo": "https://i.ibb.co/vChSVySk/SNOW-20240229-123018-933.jpg",
+  "sameAs": [
+    "https://www.instagram.com/espanol.bruno",
+    "https://www.youtube.com/@EspanholcomBrunoYT"
+  ],
+  "email": "mailto:brunoensaoluis@gmail.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Preciso ter conhecimento previo de espanhol?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Nao. Comecamos do zero ou ajustamos ao seu nivel atual com diagnostico inicial."}
+    },
+    {
+      "@type": "Question",
+      "name": "Posso fazer aula experimental gratuita?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Sim. A primeira aula e para voce conhecer metodologia e receber orientacao inicial."}
+    },
+    {
+      "@type": "Question",
+      "name": "As aulas sao ao vivo ou gravadas?",
+      "acceptedAnswer": {"@type": "Answer", "text": "As aulas principais sao ao vivo (Zoom/Meet), com materiais extras para estudo fora da aula."}
+    },
+    {
+      "@type": "Question",
+      "name": "Quais formas de pagamento?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Cartao, boleto ou Pix, com processamento seguro e contrato."}
+    }
+  ]
+}
+</script>
 <style>
-  /* Variables de colores - Identidad Visual */
   :root {
-    --amarelo-dourado: #FFCD3C;
-    --azul-profundo: #1F3C88;
-    --branco: #FFFFFF;
-    --cinza-suave: #E8E8E8;
-    --cinza-texto: #4A5568;
+    --bg: #f6f8ff;
+    --surface: #ffffff;
+    --surface-soft: #edf2ff;
+    --text: #1a2555;
+    --muted: #566190;
+    --primary: #1f3c88;
+    --primary-strong: #17306d;
+    --accent: #ffcd3c;
+    --accent-strong: #f7b801;
+    --success: #1d9b56;
+    --danger-soft: #ffe5dd;
+    --danger: #b83414;
+    --line: rgba(31, 60, 136, 0.16);
+    --shadow: 0 16px 42px rgba(31, 60, 136, 0.15);
+    --radius-lg: 22px;
+    --radius-md: 14px;
+    --radius-sm: 10px;
   }
-  /* Reset y base */
-  *, *::before, *::after {
-    box-sizing: border-box;
-  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
   body {
-    margin:0; 
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
-    background: var(--branco); 
-    color: var(--azul-profundo);
-    line-height: 1.6; 
-    font-size: 16px;
-    font-weight: 400;
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+    background:
+      radial-gradient(circle at 5% -10%, #fff4d2 0%, transparent 35%),
+      radial-gradient(circle at 90% 0%, #dce7ff 0%, transparent 30%),
+      var(--bg);
   }
 
-  header {
-    background: var(--cinza-suave);
-    display: flex;
-    align-items: center;
-    padding: 0.8rem 1.5rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 8px rgba(31, 60, 136, 0.08);
-  }
-  header .flag {
-    height: 28px;
-    margin-right: 0.75rem;
-  }
-  header .logo-container {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-  }
-  header .logo-image {
-    height: 40px;
-    width: auto;
-    max-width: 200px;
-  }
-  header .logo-fallback {
-    display: flex;
-    align-items: center;
-  }
-  header .logo-text {
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: var(--azul-profundo);
-    margin-left: 0.5rem;
-  }
-  header .yerba-icon {
-    font-size: 1.8rem;
-    color: var(--amarelo-dourado);
-  }
-  header .social-icons a {
-    margin-left: 0.8rem;
-  }
-  header .social-icons .social-icon {
-    width: 26px;
-    height: 26px;
-    vertical-align: middle;
-  }
+  img { max-width: 100%; display: block; }
+  .container { width: min(1140px, 92vw); margin: 0 auto; }
 
-  main {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 1rem .75rem 3rem;
-  }
-
-  /* Hero */
-  .hero-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #1F3C88 0%, #2A4A9B 100%);
-  color: #fff;
-  padding: 3.5rem 2rem;
-  border-radius: 22px;
-  max-width: 1100px;
-  margin: 2rem auto 3rem auto;
-  box-shadow: 0 8px 32px rgba(31, 60, 136, 0.2);
-  gap: 3.5rem;
-}
-.hero-img {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-width: 180px;
-}
-.profile-pic {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  border: 5px solid #FFCD3C;
-  object-fit: cover;
-  background: #fff;
-  margin-bottom: 1.1rem;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-}
-.badge.left-badge {
-  align-self: flex-start;
-  background: #FFCD3C;
-  color: #1F3C88;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 600;
-  padding: 0.7rem 1.2rem 0.5rem 1.2rem;
-  border-radius: 25px;
-  font-size: 1.03rem;
-  margin-top: 0;
-  box-shadow: 0 2px 8px rgba(255,205,60,0.22);
-  text-align: left;
-  min-width: 220px;
-  max-width: 260px;
-}
-.slogan {
-  color: #1F3C88;
-  font-family: 'Outfit', sans-serif;
-  font-size: 1.05rem;
-  font-weight: 500;
-  margin-top: 0.25em;
-  letter-spacing: 0.01em;
-  opacity: 0.97;
-}
-.hero-content {
-  flex: 1;
-  min-width: 280px;
-  max-width: 650px;
-  text-align: left;
-}
-.hero-content h1 {
-  font-family: 'Red Hat Display', sans-serif;
-  font-weight: 700;
-  font-size: 2.3rem;
-  margin-bottom: 1.2rem;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-}
-.hero-content p {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-  line-height: 1.5;
-  font-weight: 400;
-}
-.hero-buttons {
-  display: flex;
-  gap: 1.2rem;
-  flex-wrap: wrap;
-}
-@media (max-width: 850px) {
-  .hero-flex {
-    flex-direction: column;
-    padding: 2.2rem 1rem;
-    gap: 2rem;
-    text-align: center;
-  }
-  .hero-img {
-    align-items: center;
-    min-width: 0;
-    margin-bottom: 1.2rem;
-  }
-  .badge.left-badge {
-    text-align: center;
-    min-width: 0;
-    max-width: 100%;
-  }
-  .hero-content {
-    text-align: center;
-    max-width: 100%;
-  }
-  .hero-buttons {
-    justify-content: center;
-  }
-}
-
-
-  /* Sobre */
- .about-section {
-  margin-bottom: 3rem;
-}
-.about-flex {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-}
-.about-image {
-  width: 220px;
-  border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
-  flex-shrink: 0;
-}
-.about-text {
-  text-align: justify;
-  max-width: 700px;
-}
-.about-text h2 {
-  font-family: 'Red Hat Display', sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-  margin-bottom: 1.2rem;
-  color: #1F3C88; /* azul-profundo */
-  letter-spacing: -0.01em;
-}
-.about-text p {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.1rem;
-  color: #4A5568; /* cinza-texto */
-  line-height: 1.7;
-  margin-bottom: 1.3rem;
-}
-.btn-primary {
-  background: #FFCD3C; /* amarelo-dourado */
-  color: #1F3C88;
-  border: none;
-  padding: 0.875rem 1.75rem;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 600;
-  font-size: 1.1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-  box-shadow: 0 4px 16px rgba(255, 205, 60, 0.3);
-}
-.btn-primary:hover {
-  background: #E6B631;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 205, 60, 0.4);
-}
-
-/* Responsive: imagen arriba en móviles */
-@media (max-width: 700px) {
-  .about-flex {
-    flex-direction: column;
-    align-items: center;
-  }
-  .about-image {
-    margin-bottom: 1.5rem;
-  }
-}
-
-  /* Servicios */
-  #services {
-    margin-bottom: 3rem;
-  }
-  #services h2 {
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: var(--azul-profundo);
-    text-align: center;
+  .section { padding: 2.5rem 0; }
+  .section-title {
+    margin: 0;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: clamp(1.5rem, 2.5vw, 2.15rem);
     letter-spacing: -0.01em;
   }
+  .section-lead { margin: 0.65rem 0 0; color: var(--muted); max-width: 75ch; }
 
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 1.8rem;
-  }
   .card {
-    background: var(--branco);
-    border: 1px solid var(--cinza-suave);
-    border-radius: 12px;
-    padding: 1.5rem 1.25rem;
-    box-shadow: 0 4px 16px rgba(31, 60, 136, 0.08);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    box-shadow: 0 10px 28px rgba(31, 60, 136, 0.08);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    border: 0;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.82rem 1.18rem;
+    font-weight: 700;
+    font-family: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .btn:hover, .btn:focus-visible { transform: translateY(-2px); }
+
+  .btn-primary {
+    color: #172f6d;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
+    box-shadow: 0 10px 24px rgba(247, 184, 1, 0.35);
+  }
+
+  .btn-outline {
+    color: #f4f7ff;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    background: transparent;
+  }
+
+  .btn-light {
+    color: var(--primary);
+    background: var(--surface-soft);
+  }
+
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(9px);
+    background: rgba(255, 255, 255, 0.92);
+    border-bottom: 1px solid rgba(31, 60, 136, 0.14);
+  }
+
+  .header-inner {
+    min-height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.9rem;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .brand img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent);
+  }
+
+  .brand strong {
+    font-family: "Red Hat Display", sans-serif;
+    display: block;
+    font-size: 1.03rem;
+  }
+
+  .brand small {
+    display: block;
+    color: var(--muted);
+    font-size: 0.84rem;
+  }
+
+  .menu-toggle {
+    display: none;
+    border: 0;
+    background: var(--surface-soft);
+    color: var(--primary);
+    font-weight: 700;
+    font-family: inherit;
+    border-radius: 8px;
+    padding: 0.48rem 0.78rem;
+    cursor: pointer;
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .main-nav a {
+    text-decoration: none;
+    color: var(--muted);
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+
+  .main-nav a:hover, .main-nav a:focus-visible { color: var(--primary); }
+  .lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-left: auto;
+  }
+
+  .lang-btn {
+    border: 1px solid rgba(31, 60, 136, 0.2);
+    background: #fff;
+    color: var(--primary);
+    border-radius: 999px;
+    padding: 0.2rem 0.45rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: inherit;
+    line-height: 1;
+  }
+
+  .lang-btn img {
+    width: 14px;
+    height: 10px;
+    border-radius: 2px;
+  }
+
+  .lang-btn small {
+    font-size: 0.68rem;
+    letter-spacing: 0.02em;
+  }
+
+  .lang-btn.active {
+    background: var(--surface-soft);
+    border-color: rgba(31, 60, 136, 0.35);
+  }
+
+  .translate-host {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  .goog-te-banner-frame,
+  .goog-te-banner-frame.skiptranslate,
+  iframe.goog-te-banner-frame,
+  .goog-te-balloon-frame,
+  #goog-gt-tt,
+  .goog-tooltip,
+  .goog-te-spinner-pos,
+  .goog-te-menu-frame,
+  .goog-logo-link {
+    display: none !important;
+  }
+
+  .goog-text-highlight {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  body { top: 0 !important; }
+  .hero { padding: 2.1rem 0 1.3rem; }
+
+  .hero-panel {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(150deg, #1f3c88 0%, #2a50ae 55%, #3568dc 100%);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    color: #f7faff;
+    padding: clamp(1.2rem, 3vw, 2.6rem);
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 1.3rem;
+  }
+
+  .hero-panel::after {
+    content: "";
+    position: absolute;
+    right: -130px;
+    bottom: -130px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 205, 60, 0.32) 0%, transparent 70%);
+  }
+
+  .hero-profile { position: relative; z-index: 1; }
+
+  .hero-profile img {
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--accent);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+    margin-bottom: 0.85rem;
+  }
+
+  .badge {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 0.42rem 0.82rem;
+    background: var(--accent);
+    color: #1a3173;
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  .hero h1 {
+    margin: 0 0 0.75rem;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: clamp(1.7rem, 3.7vw, 2.95rem);
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+  }
+
+  .hero p { margin: 0; color: #dbe6ff; max-width: 64ch; }
+
+  .hero-points {
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.4rem;
+  }
+
+  .hero-points li { color: #f2f6ff; font-size: 0.95rem; }
+
+  .hero-ctas {
+    margin-top: 1.2rem;
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .kpi-grid {
+    margin-top: 1.2rem;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(5, minmax(120px, 1fr));
+  }
+
+  .kpi {
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 0.9rem;
+    text-align: center;
+  }
+
+  .kpi strong {
+    display: block;
+    font-size: 1.34rem;
+    line-height: 1.12;
+    color: var(--primary);
+  }
+
+  .kpi span { font-size: 0.88rem; color: var(--muted); }
+
+  .trust-strip {
+    margin-top: 1rem;
+  }
+  .trust-wrap {
+    border: 1px solid rgba(31, 60, 136, 0.16);
+    border-radius: var(--radius-md);
+    padding: 0.95rem;
+    background: linear-gradient(180deg, #ffffff 0%, #f4f8ff 100%);
+  }
+  .trust-headline {
+    margin: 0 0 0.75rem;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 0.92rem;
+  }
+  .trust-grid {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  .trust-item {
+    border: 1px solid var(--line);
+    background: #fff;
+    border-radius: var(--radius-sm);
+    padding: 0.78rem 0.55rem;
+    text-align: center;
+    color: var(--primary);
+    display: grid;
+    gap: 0.42rem;
+    justify-items: center;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .trust-item:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 18px rgba(25, 48, 103, 0.12);
+  }
+  .trust-item span {
+    font-size: 0.79rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .trust-logo-img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid rgba(31, 60, 136, 0.12);
+    padding: 5px;
+  }
+
+  .trust-logo-badge {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+  }
+
+  .trust-logo-badge.asaas { background: linear-gradient(135deg, #2141c6, #1b63d2); font-size: 0.54rem; }
+  .trust-logo-badge.dele { background: linear-gradient(135deg, #b31d1d, #d93434); }
+  .trust-logo-badge.siele { background: linear-gradient(135deg, #ff8f1f, #f7b801); color: #1d2f67; }
+
+  .credentials {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .credentials h3 {
+    margin: 0 0 0.72rem;
+    font-size: 1rem;
+    color: var(--primary);
+  }
+
+  .credentials ul {
+    margin: 0;
+    padding-left: 1.15rem;
+    color: var(--muted);
+  }
+
+  .credentials li { margin-bottom: 0.38rem; }
+
+  .about-grid {
+    margin-top: 1.2rem;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 1.2rem;
+  }
+
+  .about-photo { overflow: hidden; }
+  .about-photo img { height: 100%; object-fit: cover; min-height: 260px; }
+
+  .about-copy { padding: 1.2rem 1.3rem; }
+  .about-copy p { margin: 0 0 0.9rem; color: var(--muted); }
+
+  .benefits {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #fff8df;
+    border: 1px solid rgba(247, 184, 1, 0.38);
+    border-radius: var(--radius-sm);
+  }
+
+  .benefits ul { margin: 0; padding-left: 1.15rem; color: #37457f; }
+  .benefits li { margin-bottom: 0.45rem; }
+
+  .promo {
+    margin-top: 1rem;
+    background: var(--danger-soft);
+    color: var(--danger);
+    border-radius: var(--radius-sm);
+    padding: 0.85rem 1rem;
+    font-weight: 700;
+  }
+
+  .process-grid,
+  .proof-grid,
+  .plans-grid,
+  .catalog-grid {
+    margin-top: 1.2rem;
+    display: grid;
+    gap: 0.85rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .process-step,
+  .proof-card,
+  .plan-card,
+  .catalog-card {
+    padding: 1rem;
+  }
+
+  .process-step b {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: inline-grid;
+    place-items: center;
+    background: var(--accent);
+    color: #1b3274;
+    margin-bottom: 0.55rem;
+  }
+
+  .process-step p,
+  .proof-card p,
+  .plan-card p,
+  .catalog-card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+  .proof-stars { color: #f4a900; font-size: 0.95rem; margin-bottom: 0.35rem; }
+  .proof-name { margin-top: 0.65rem; font-weight: 700; color: var(--primary); font-size: 0.91rem; }
+
+  .proof-link {
+    margin-top: 0.7rem;
+    display: inline-flex;
+    font-size: 0.88rem;
+    color: var(--primary);
+    font-weight: 700;
+  }
+
+  .plan-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    transition: all 0.3s ease;
+    gap: 0.45rem;
   }
-  .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(31, 60, 136, 0.12);
-  }
-  .card h3 {
-    margin: 0 0 0.75rem 0;
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: 600;
-    color: var(--azul-profundo);
-    font-size: 1.25rem;
-  }
-  .card p {
-    flex-grow: 1;
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    color: var(--cinza-texto);
-    line-height: 1.6;
-  }
-  .card .price {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 700;
-    font-size: 1.3rem;
-    margin: 1.2rem 0 1rem 0;
-    color: var(--amarelo-dourado);
-  }
-  .card button {
-    background: var(--azul-profundo);
-    border: none;
-    padding: 0.75rem 1rem;
-    border-radius: 8px;
-    color: var(--branco);
-    cursor: pointer;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 600;
-    transition: all 0.3s ease;
-  }
-  .card button:hover {
-    background: #2A4A9B;
+
+  .plan-card.featured {
+    border: 2px solid rgba(247, 184, 1, 0.72);
+    box-shadow: 0 14px 30px rgba(24, 43, 93, 0.16);
     transform: translateY(-2px);
   }
 
-  .card .icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+  .pill-hot {
+    background: #f7b801;
+    color: #1b3274;
+    border-color: rgba(247, 184, 1, 0.85);
   }
 
-  /* Planos & Preços */
-  #prices {
-    margin-bottom: 3rem;
-  }
-  #prices h2 {
-    font-family: 'Red Hat Display', sans-serif;
+  .pill {
+    width: fit-content;
+    border-radius: 999px;
+    padding: 0.24rem 0.62rem;
+    border: 1px solid rgba(31, 60, 136, 0.2);
+    background: var(--surface-soft);
+    color: var(--primary);
+    font-size: 0.75rem;
     font-weight: 700;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: var(--azul-profundo);
-    text-align: center;
-    letter-spacing: -0.01em;
   }
+
+  .plan-card h3,
+  .catalog-card h3 { margin: 0; font-size: 1rem; color: var(--text); }
+
+  .price {
+    font-size: 1.2rem;
+    color: var(--primary);
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .plan-card ul,
+  .catalog-card ul {
+    margin: 0;
+    padding-left: 1.15rem;
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+
+  .plan-card li,
+  .catalog-card li { margin-bottom: 0.3rem; }
+
+  .table-wrap {
+    margin-top: 0;
+    overflow-x: auto;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--line);
+    background: var(--surface);
+  }
+
   table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 1rem;
-    text-align: center;
+    min-width: 780px;
+    font-size: 0.92rem;
   }
+
   th, td {
-    padding: 1rem 0.8rem;
-    border: 1px solid var(--cinza-suave);
+    text-align: left;
+    padding: 0.8rem;
+    border-bottom: 1px solid rgba(31, 60, 136, 0.12);
+    vertical-align: top;
   }
+
   th {
-    background-color: var(--azul-profundo);
-    color: var(--branco);
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: 600;
-  }
-  .price-cta {
-    background: var(--amarelo-dourado);
-    color: var(--azul-profundo);
-    border-radius: 8px;
-    padding: 0.6rem 1.2rem;
-    cursor: pointer;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: none;
-  }
-  .price-cta:hover {
-    background: #E6B631;
-    transform: translateY(-2px);
-  }
-  .promo {
-    margin-top: -1rem;
-    color: #b83414;
-    font-weight: 700;
-    font-size: 1.1rem;
-    text-align: center;
-  }
-
-  /* Processo */
-  #process {
-    margin-bottom: 3rem;
-  }
-  #process h2 {
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: var(--azul-profundo);
-    text-align: center;
-    letter-spacing: -0.01em;
-  }
-  .process-step {
-    display: flex;
-    align-items: center;
-    max-width: 700px;
-    margin: 1rem auto;
-  }
-  .process-step .icon {
-    background: var(--amarelo-dourado);
-    color: var(--azul-profundo);
-    border-radius: 50%;
-    width: 48px;
-    height: 48px;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.4rem;
-    margin-right: 1.2rem;
-    box-shadow: 0 4px 12px rgba(255, 205, 60, 0.3);
-  }
-  .process-step p {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
-    margin: 0;
-    color: var(--cinza-texto);
-    line-height: 1.6;
-  }
-
-  /* Depoimentos */
-  #testimonials {
-    margin-bottom: 3rem;
-  }
-  #testimonials h2 {
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: var(--azul-profundo);
-    text-align: center;
-    letter-spacing: -0.01em;
-  }
-  .testimonials-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-  }
-  .testimonial-card {
-    background: var(--branco);
-    border: 1px solid var(--cinza-suave);
-    max-width: 300px;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(31, 60, 136, 0.08);
-    transition: all 0.3s ease;
-  }
-  .testimonial-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(31, 60, 136, 0.12);
-  }
-  .testimonial-card img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 0.6rem;
-  }
-  .testimonial-card p {
-    font-size: 0.95rem;
-    color: #222;
-  }
-  .testimonial-card .name {
-    margin-top: 0.6rem;
-    font-weight: 700;
-    font-size: 1rem;
-    color: var(--azul);
-  }
-  .testimonial-cta {
-    text-align: center;
-    margin-top: 1rem;
-  }
-  .testimonial-cta button {
-    background: var(--amarelo-dourado);
-    color: var(--azul);
-    font-weight: 700;
-    padding: 0.6rem 1.3rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    
-  }
-  .testimonial-cta button:hover {
-    background: rgba(255, 205, 60, 0.3);
-  
-  }
-
-  /* Material & Demo */
-  #material {
-    margin-bottom: 3rem;
-    text-align: center;
-  }
-  #material h2 {
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 1.9rem;
-    margin-bottom: 1rem;
-    color: var(--azul);
-  }
-  #material a {
-    display: inline-block;
-    margin-top: 0.5rem;
-    color: var(--amarelo);
-    font-weight: 700;
-    text-decoration: none;
-  }
-  #material a:hover {
-    text-decoration: underline;
-  }
-
-  /* FAQ */
-  #faq {
-    margin-bottom: 3rem;
-  }
-  #faq h2 {
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 1.9rem;
-    margin-bottom: 1rem;
-    color: var(--azul);
-    text-align: center;
-  }
-  #faq details {
-    margin-bottom: 1rem;
-    border: 1px solid var(--cinza);
-    padding: 0.75rem 1rem;
-    border-radius: 5px;
-    background: var(--branco);
-  }
-  #faq summary {
-    font-weight: 700;
-    cursor: pointer;
-    font-size: 1.05rem;
-  }
-  #faq p {
-    margin-top: 0.5rem;
-  }
-
-  /* Contato */
-  #contact {
-    max-width: 600px;
-    margin: 0 auto 4rem;
-    padding: 1rem;
-    border: 1px solid var(--cinza);
-    border-radius: 10px;
-    background: var(--cinza);
-  }
-  #contact h2 {
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 1.9rem;
-    margin-bottom: 1rem;
-    color: var(--azul);
-    text-align: center;
-  }
-  #contact form {
-    display: flex;
-    flex-direction: column;
-  }
-  #contact label {
-    margin: 0.5rem 0 0.2rem;
-    font-weight: 600;
-  }
-  #contact input, #contact select, #contact textarea {
-    padding: 0.5rem;
-    border-radius: 5px;
-    border: 1px solid #999;
-    font-size: 1rem;
-  }
-  #contact textarea {
-    resize: vertical;
-  }
-  #contact button {
-    margin: 1.2rem 0 0;
-    background: var(--amarelo);
-    color: var(--azul);
-    border: none;
-    padding: 0.75rem;
-    font-weight: 700;
-    font-size: 1.1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  #contact button:hover {
-    background: #e6b631;
-  }
-  /* Checkbox LGPD */
-  .lgpd-consent {
-    margin-top: 0.7rem;
-    font-size: 0.85rem;
-  }
-  .lgpd-consent input {
-    margin-right: 0.5rem;
-  }
-.btn-secondary {
-  border-width: 2.5px;
-  font-size: 1.08rem;
-  background: transparent;
-  border: 2px solid var(--amarelo-dourado);
-  color: var(--amarelo-dourado);
-  padding: 0.75rem 1.5rem;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 500;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-  box-shadow: none;
-}
-
-.btn-secondary:hover,
-.btn-secondary:focus {
-  background: var(--amarelo-dourado);
-  color: var(--azul-profundo);
-  transform: translateY(-2px);
-}
-  /* Footer */
-  footer {
-    background: var(--azul-profundo);
-    color: var(--branco);
-    padding: 1rem;
-    text-align: center;
+    font-family: "Red Hat Display", sans-serif;
     font-size: 0.9rem;
-  }
-  footer a {
-    color: var(--amarelo-dourado);
-    margin: 0 0.8rem;
-    text-decoration: none;
-  }
-  footer a:hover {
-    text-decoration: underline;
+    background: #f1f5ff;
+    color: var(--primary-strong);
   }
 
-  /* WhatsApp flotante */
+  .table-collapse {
+    margin-top: 1rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    overflow: hidden;
+  }
+  .table-collapse summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--primary);
+    padding: 0.9rem 1rem;
+    background: #eef3ff;
+  }
+  .table-collapse summary::-webkit-details-marker { display: none; }
+  .table-collapse[open] summary { border-bottom: 1px solid var(--line); }
+
+  .table-note {
+    margin-top: 0.7rem;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.92rem;
+  }
+
+  .demo-panel {
+    margin-top: 1.2rem;
+    padding: 1rem;
+  }
+
+  .demo-link {
+    margin-bottom: 0.8rem;
+    display: inline-flex;
+  }
+
+  .demo-frame {
+    width: 100%;
+    height: 430px;
+    border: 0;
+    border-radius: 10px;
+    background: #f5f7ff;
+  }
+
+
+  .results-verified {
+    margin-top: 1rem;
+    border: 1px solid var(--line);
+    background: #f6f9ff;
+    border-radius: var(--radius-sm);
+    padding: 0.95rem;
+  }
+
+  .results-verified h3 {
+    margin: 0 0 0.72rem;
+    color: var(--primary);
+    font-size: 0.98rem;
+  }
+
+  .results-grid {
+    display: grid;
+    gap: 0.6rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .result-item {
+    background: #fff;
+    border: 1px solid rgba(31, 60, 136, 0.12);
+    border-radius: 10px;
+    padding: 0.72rem;
+    text-align: center;
+  }
+
+  .result-item strong {
+    display: block;
+    color: var(--primary);
+    font-size: 1.08rem;
+    line-height: 1.15;
+  }
+
+  .result-item span {
+    color: var(--muted);
+    font-size: 0.84rem;
+  }
+
+  .mobile-cta {
+    display: none;
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: 10px;
+    z-index: 1300;
+    justify-content: center;
+  }
+
+  .mobile-cta .btn {
+    width: 100%;
+    justify-content: center;
+    box-shadow: 0 12px 24px rgba(16, 43, 106, 0.25);
+  }
+  .faq-grid {
+    margin-top: 1.1rem;
+    display: grid;
+    gap: 0.7rem;
+  }
+
+  details {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 0.78rem 0.9rem;
+  }
+
+  summary { font-weight: 700; cursor: pointer; }
+  details p { margin: 0.52rem 0 0; color: var(--muted); }
+
+  .contact-panel {
+    margin-top: 1.1rem;
+    padding: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .contact-panel p { margin: 0 0 0.42rem; color: var(--muted); }
+  .contract-note { margin-top: 0.7rem; color: var(--success); font-weight: 700; }
+
+  .site-footer {
+    margin-top: 2.2rem;
+    background: #132a66;
+    color: #f3f7ff;
+    padding: 1.55rem 0;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-links a,
+  .site-footer a { color: #ffd36b; text-decoration: none; }
+  .footer-links a:hover,
+  .site-footer a:hover { text-decoration: underline; }
+
+  .footer-social {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .footer-social a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 211, 107, 0.45);
+    display: grid;
+    place-items: center;
+    color: #ffd36b;
+    transition: transform 0.2s ease, background 0.2s ease;
+  }
+
+  .footer-social a:hover {
+    text-decoration: none;
+    background: rgba(255, 211, 107, 0.12);
+    transform: translateY(-1px);
+  }
+
+
   .whatsapp-float {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: var(--amarelo);
-    color: var(--azul);
-    border-radius: 50%;
+    right: 18px;
+    bottom: 18px;
     width: 56px;
     height: 56px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 28px;
-    filter: drop-shadow(0 1px 3px rgba(0,0,0,0.3));
-    z-index: 999;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  .whatsapp-float:hover {
-    background: #e6b631;
+    border-radius: 50%;
+    background: #20c863;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 10px 24px rgba(8, 80, 34, 0.32);
+    z-index: 1100;
   }
 
-  /* Modal para precios */
-  .modal-overlay {
+  .popup {
     position: fixed;
-    top:0; left:0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,0.6);
+    right: 18px;
+    bottom: 86px;
+    width: min(322px, calc(100vw - 24px));
+    background: #fff;
+    border: 2px solid var(--accent);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 0.9rem;
+    z-index: 1200;
     display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
   }
-  .modal {
-    background: var(--branco);
-    padding: 1.75rem 2rem;
-    border-radius: 10px;
-    max-width: 480px;
-    max-height: 90vh;
-    overflow-y: auto;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.3);
-  }
-  .modal h3 {
-    margin-top: 0;
-    color: var(--azul);
-    font-family: 'Red Hat Display', sans-serif;
-  }
-  .modal table {
-    margin-top: 1rem;
-    width: 100%;
-  }
-  .modal-close {
-    background: var(--azul);
-    color: var(--branco);
-    border: none;
-    padding: 0.4rem 1rem;
+
+  .popup.visible { display: block; animation: rise 0.35s ease; }
+  .popup h4 { margin: 0 0 0.3rem; font-family: "Red Hat Display", sans-serif; }
+  .popup p { margin: 0 0 0.72rem; color: var(--muted); font-size: 0.92rem; }
+
+  .popup-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: 0;
+    background: transparent;
+    font-size: 1rem;
+    color: #666;
     cursor: pointer;
-    border-radius: 6px;
-    font-weight: 600;
-    margin-top: 1rem;
-    float: right;
   }
 
-  /* Responsive */
-  @media (max-width: 768px) {
-    .hero h1 {
-      font-size: 1.8rem;
-    }
-    .hero p {
-      font-size: 1rem;
-    }
-    .btn-primary, .btn-secondary {
-      display: block;
-      margin: 0.5rem auto;
-      text-align: center;
-    }
-    header {
-      flex-direction: column;
-      text-align: center;
-      padding: 1rem;
-    }
-    header .social-icons {
-      margin-top: 0.5rem;
-    }
+  .reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.45s ease, transform 0.45s ease;
   }
 
-  @media (max-width: 600px) {
-    .hero h1 {
-      font-size: 1.7rem;
+  .reveal.in { opacity: 1; transform: none; }
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 980px) {
+    .hero-panel,
+    .about-grid { grid-template-columns: 1fr; }
+
+    .hero-profile {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      flex-wrap: wrap;
     }
-    .cards {
-      grid-template-columns: 1fr;
+
+    .hero-profile img { margin: 0; }
+    .kpi-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .trust-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+    .process-grid,
+    .proof-grid,
+    .plans-grid,
+    .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+
+  @media (max-width: 760px) {
+    .menu-toggle { display: inline-flex; }
+    .lang-switch { margin-left: 0; }
+    .lang-btn small { display: none; }
+
+    .main-nav {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 74px;
+      display: none;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+      padding: 0.8rem 1rem;
+      background: #fff;
+      border-bottom: 1px solid rgba(31, 60, 136, 0.16);
     }
-    .process-step {
-      flex-direction: column;
-      align-items: flex-start;
+
+    .main-nav.open { display: flex; }
+
+    .kpi-grid,
+    .process-grid,
+    .proof-grid,
+    .plans-grid,
+    .catalog-grid,
+    .contact-panel,
+    .footer-grid,
+    .results-grid { grid-template-columns: 1fr; }
+
+    body { padding-bottom: 86px; }
+    .contact-panel .btn { width: 100%; }
+    .demo-frame { height: 350px; }
+    .trust-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .footer-social { justify-content: flex-start; }
+    .mobile-cta { display: flex; }
+    .whatsapp-float { bottom: 84px; }
+    .popup { bottom: 150px; }
+  }
+
+  @media (max-width: 560px) {
+    .header-inner {
+      min-height: 66px;
+      gap: 0.5rem;
     }
-    .process-step .icon {
-      margin-bottom: 0.4rem;
+
+    .brand strong { font-size: 0.94rem; }
+    .brand small { font-size: 0.75rem; }
+
+    .lang-switch { gap: 0.25rem; }
+    .lang-btn {
+      padding: 0.18rem 0.38rem;
+      min-width: 36px;
+      justify-content: center;
+    }
+
+    .hero { padding-top: 1.25rem; }
+    .hero-panel { padding: 1rem; }
+    .hero h1 { font-size: clamp(1.45rem, 8vw, 1.95rem); }
+
+    .trust-grid { grid-template-columns: 1fr; }
+    .kpi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    .table-wrap { margin-inline: -0.25rem; }
+    .popup {
+      right: 12px;
+      left: 12px;
+      width: auto;
     }
   }
-  .benefits {
-  background: #FFFBE8;
-  padding: 1.2rem 1.5rem;
-  border-radius: 12px;
-  margin: 2rem auto 2rem auto;
-  max-width: 700px;
-  box-shadow: 0 2px 12px rgba(255,205,60,0.13);
-}
-.benefits ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 1.15rem;
-  color: #1F3C88;
-}
-.benefits li {
-  margin-bottom: 0.8em;
-  font-weight: 500;
-}
-.promo-banner {
-  background: #ffd6d6;
-  color: #b83414;
-  font-weight: bold;
-  font-size: 1.2rem;
-  border-radius: 8px;
-  padding: 1rem 1.5rem;
-  margin: 1.5rem 0;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(255,0,0,0.08);
-}
 </style>
 </head>
-
 <body>
-<header>
-  <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg" alt="Bandeira espanhola" class="flag" />
-  <div class="logo-container">
-    <!-- LOGO CORREGIDO: sin onerror -->
-    <img src="https://i.ibb.co/LXcZWm0K/2-removebg-preview-1.png" alt="Logo Espanhol com Bruno" class="logo-image" />
-    <div class="logo-fallback" style="display: none;">
-      <span class="yerba-icon">🧉</span>
-      <div class="logo-text">Espanhol com Bruno</div>
-    </div>
-  </div>
-  <nav class="social-icons" aria-label="Redes sociais">
-    <a href="https://www.instagram.com/espanol.bruno" target="_blank" rel="noopener">
-      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="social-icon" />
-    </a>
-    <a href="https://wa.me/98986070648" target="_blank" rel="noopener">
-      <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" class="social-icon" />
-    </a>
-  </nav>
-</header>
+  <div id="google_translate_element" class="translate-host" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <img src="2-removebg-preview (1).png" alt="Professor Bruno Aguirre" width="120" height="120" decoding="async" fetchpriority="high" />
+        <span>
+          <strong>Espanhol com Bruno</strong>
+          <small>Seu aprendizado é nossa prioridade</small>
+        </span>
+      </a>
+      <div class="lang-switch" aria-label="Idioma do site">
+        <button type="button" class="lang-btn active" data-lang="pt" aria-label="Portugues">
+          <img src="https://flagcdn.com/w20/br.png" alt="Bandeira do Brasil" loading="lazy" decoding="async" />
+          <small>PT</small>
+        </button>
+        <button type="button" class="lang-btn" data-lang="es" aria-label="Espanhol">
+          <img src="https://flagcdn.com/w20/es.png" alt="Bandeira da Espanha" loading="lazy" decoding="async" />
+          <small>ES</small>
+        </button>
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English">
+          <img src="https://flagcdn.com/w20/us.png" alt="US flag" loading="lazy" decoding="async" />
+          <small>EN</small>
+        </button>
+      </div>
 
-  <main>
- <section class="hero-flex">
-  <div class="hero-img">
-    <img src="https://i.ibb.co/fYhQkTQ1/Dise-o-sin-t-tulo-1-1.png" alt="Professor argentino" class="profile-pic" />
-    <div class="badge left-badge">
-      Professor nativo (Argentina) • Formado em Letras • +40 aprovações SIELE/DELE
-      <div class="slogan">Seu aprendizado é nossa prioridade</div>
-    </div>
-  </div>
-  <div class="hero-content">
-    <h1>Aprenda espanhol em 10 meses e fale com confiança em viagens, no trabalho e no dia a dia</h1>
-    <p>Aulas 100% online com professor argentino, materiais exclusivos e foco total na conversação.<br><strong>Aula experimental gratuita!</strong></p>
-    <div class="hero-buttons">
-      <button class="btn-primary" onclick="location.href='#contact'">Reservar aula experimental</button>
-      <button class="btn-secondary" onclick="location.href='#prices'">Ver planos e preços</button>
-    </div>
-  </div>
-</section>
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
 
-<section id="about" class="about-section">
-  <div class="about-flex">
-    <img src="https://i.ibb.co/vChSVySk/SNOW-20240229-123018-933.jpg" alt="Bruno Aguirre, professor de espanhol" class="about-image" />
-    <div class="about-text">
-      <h2>Sou Bruno Aguirre — seu professor de espanhol</h2>
-      <p>
-        Sou Bruno Aguirre, professor nativo da Argentina, formado em Letras e especializado no ensino de espanhol para brasileiros. Tenho mais de 4 anos de experiência e dezenas de alunos aprovados em exames como DELE e SIELE. Minhas aulas combinam método comunicativo, materiais próprios (PDFs, áudios, exercícios) e acompanhamento próximo por WhatsApp. Meu objetivo é te deixar falando espanhol com segurança em situações reais — viagens, trabalho ou provas.
-      </p>
-      <button class="btn-primary" onclick="location.href='#contact'">Agende sua aula experimental</button>
+      <nav id="mainNav" class="main-nav" aria-label="Navegacao principal">
+        <a href="#about">Sobre</a>
+        <a href="#process">Metodo</a>
+        <a href="#plans">Planos</a>
+        <a href="#material">Material</a>
+        <a href="#testimonials">Depoimentos</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn-light">Aula experimental</a>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
 
-<section class="benefits">
-  <ul>
-    <li>✅ Fale espanhol em 10 meses</li>
-    <li>✅ Método comunicativo com foco em conversação</li>
-    <li>✅ Professor nativo argentino, formado em Letras</li>
-    <li>✅ Materiais exclusivos (PDFs, áudios, vídeos)</li>
-    <li>✅ +40 aprovações em SIELE e DELE</li>
-  </ul>
-</section>
-<div class="promo-banner">
-  ⚠️ Vagas limitadas! Garanta sua vaga hoje.
+  <main id="top">
+    <section class="hero section">
+      <div class="container">
+        <div class="hero-panel reveal">
+          <div class="hero-profile">
+            <img src="https://i.ibb.co/vChSVySk/SNOW-20240229-123018-933.jpg" alt="Bruno Aguirre, professor de espanhol" width="152" height="152" decoding="async" fetchpriority="high" />
+            <span class="badge">Professor formado, especializado e nativo.</span>
+          </div>
+
+          <div class="hero-content">
+            <h1>Aprenda espanhol em até 10 meses e fale com confiança em viagens, trabalho e certificações.</h1>
+            <p>Aulas 100% online, metodologia comunicativa, materiais exclusivos e acompanhamento real por WhatsApp para você manter consistência.</p>
+            <ul class="hero-points">
+              <li>Curso personalizado por objetivo: viagem, carreira, vestibular ou DELE/SIELE.</li>
+              <li>Aula experimental gratuita para diagnóstico do seu nível.</li>
+              <li>Plano com metas claras para evolução mensal.</li>
+            </ul>
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="#contact">Reservar aula experimental</a>
+              <a class="btn btn-outline" href="#plans">Ver planos e preços</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="trust-strip">
+      <div class="container">
+        <div class="trust-wrap reveal">
+          <p class="trust-headline">Plataformas, certificacoes e servicos utilizados no curso</p>
+          <div class="trust-grid" aria-label="Plataformas, certificacoes e servicos utilizados no curso">
+            <div class="trust-item">
+              <img class="trust-logo-img" src="https://www.google.com/s2/favicons?sz=128&domain_url=https://asaas.com" alt="Logo Asaas" loading="lazy" decoding="async" />
+              <span>Asaas</span>
+            </div>
+            <div class="trust-item">
+              <img class="trust-logo-img" src="https://www.google.com/s2/favicons?sz=128&domain_url=https://paypal.com" alt="Logo PayPal" loading="lazy" decoding="async" />
+              <span>PayPal</span>
+            </div>
+            <div class="trust-item">
+              <img class="trust-logo-img" src="https://www.google.com/s2/favicons?sz=128&domain_url=https://autentique.com.br" alt="Logo Contrato" loading="lazy" decoding="async" />
+              <span>Contrato</span>
+            </div>
+            <div class="trust-item">
+              <img class="trust-logo-img" src="https://www.google.com/s2/favicons?sz=128&domain_url=https://gov.br" alt="Logo GOV.BR" loading="lazy" decoding="async" />
+              <span>GOV.BR</span>
+            </div>
+            <div class="trust-item">
+              <img class="trust-logo-img" src="https://www.google.com/s2/favicons?sz=128&domain_url=https://youtube.com" alt="Logo YouTube Education" loading="lazy" decoding="async" />
+              <span>YouTube Education</span>
+            </div>
+            <div class="trust-item">
+              <img class="trust-logo-img" src="https://www.google.com/s2/favicons?sz=128&domain_url=https://ivoox.com" alt="Logo iVoox" loading="lazy" decoding="async" />
+              <span>iVoox</span>
+            </div>
+            <div class="trust-item">
+              <img class="trust-logo-img" src="https://www.google.com/s2/favicons?sz=128&domain_url=https://h5p.org" alt="Logo H5P" loading="lazy" decoding="async" />
+              <span>H5P</span>
+            </div>
+            <div class="trust-item">
+              <img class="trust-logo-img" src="https://www.google.com/s2/favicons?sz=128&domain_url=https://canva.com/education" alt="Logo Canva Educacao" loading="lazy" decoding="async" />
+              <span>Canva Educacao</span>
+            </div>
+            <div class="trust-item">
+              <img class="trust-logo-img" src="https://www.google.com/s2/favicons?sz=128&domain_url=https://education.microsoft.com" alt="Logo Microsoft Education" loading="lazy" decoding="async" />
+              <span>Microsoft Education</span>
+            </div>
+            <div class="trust-item">
+              <img class="trust-logo-img" src="https://www.google.com/s2/favicons?sz=128&domain_url=https://gemini.google.com" alt="Logo Gemini" loading="lazy" decoding="async" />
+              <span>Gemini</span>
+            </div>
+            <div class="trust-item">
+              <img class="trust-logo-img" src="https://www.google.com/s2/favicons?sz=128&domain_url=https://education.minecraft.net" alt="Logo Minecraft Education" loading="lazy" decoding="async" />
+              <span>Minecraft Education</span>
+            </div>
+            <div class="trust-item">
+              <img class="trust-logo-img" src="https://www.google.com/s2/favicons?sz=128&domain=www.celu.edu.ar" alt="Logo CELU" loading="lazy" decoding="async" />
+              <span>CELU</span>
+            </div>
+            <div class="trust-item">
+              <img class="trust-logo-img" src="https://www.google.com/s2/favicons?sz=128&domain_url=https://cervantes.es" alt="Logo Instituto Cervantes" loading="lazy" decoding="async" />
+              <span>Instituto Cervantes</span>
+            </div>
+            <div class="trust-item">
+              <img class="trust-logo-img" src="https://s1.static.brasilescola.uol.com.br/be/vestibular/-589da43d2b248.jpg" alt="Logo ENEM" loading="lazy" decoding="async" />
+              <span>ENEM</span>
+            </div>
+            <div class="trust-item">
+              <img class="trust-logo-img" src="https://www.google.com/s2/favicons?sz=128&domain=www.uema.br" alt="Logo UEMA" loading="lazy" decoding="async" />
+              <span>UEMA</span>
+            </div>
+            <div class="trust-item">
+              <img class="trust-logo-img" src="https://www.google.com/s2/favicons?sz=128&domain_url=https://educ.ar" alt="Logo educ.ar" loading="lazy" decoding="async" />
+              <span>educ.ar</span>
+            </div>
+          </div>      </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">Sou Bruno D. Aguirre, seu professor de espanhol, e vou te ajudar a falar com confiança desde a primeira aula.</h2>
+        <p class="section-lead">Mais de 4 anos ajudando brasileiros a falar espanhol com confiança, unindo conversação real, base gramatical sólida e preparação para exames internacionais.</p>
+
+        <div class="about-grid">
+          <article class="card about-photo reveal">
+            <img src="Red Gradient Profile Photo Instagram Post (1).png" alt="Foto profissional de Bruno" width="640" height="640" loading="lazy" decoding="async" />
+          </article>
+
+          <article class="card about-copy reveal">
+            <p>Sou professor nativo da Argentina, formado em Letras e especializado no ensino de espanhol para brasileiros.
+    Já acompanhei dezenas de alunos em provas como DELE e SIELE, além de estudantes focados em viagens e carreira internacional.
+  </p>
+            <p>Minhas aulas combinam método comunicativo, materiais próprios (PDFs, áudios, vídeos e exercícios)
+    e acompanhamento próximo pelo WhatsApp para tirar dúvidas no dia a dia.</p>
+            <p>Objetivo do curso: você falar espanhol com segurança em situações reais, sem travar por falta de prática.</p>
+            <a href="#contact" class="btn btn-primary">Agendar primeira aula</a>
+          </article>
+        </div>
+
+        <article class="card credentials reveal">
+        <h3>Credenciais reais</h3>
+<ul>
+  <li><strong>Formação:</strong> Graduado em Letras – Espanhol e professor nativo da Argentina.</li>
+  <li><strong>Certificações:</strong> Certificado Internacional de Inglês (CEF B1 – Pearson Edexcel) e certificação técnica em Administração e Gestão.</li>
+  <li><strong>Formação complementar:</strong> Capacitação pedagógica contínua e atualização em metodologias de ensino.</li>
+  <li><strong>Diferencial tecnológico:</strong> formação em tecnologia aplicada à educação e criação de materiais digitais.</li>
+  <li><strong>Método:</strong> Abordagem comunicativa com gramática aplicada e prática guiada.</li>
+  <li><strong>Alcance internacional:</strong> Alunos na Argentina, Brasil, Colômbia, Espanha, Estados Unidos, França, Portugal e Suécia.</li>
+  <li><strong>Resultados:</strong> Mais de 40 alunos aprovados em exames e dezenas focados em viagens e carreira.</li>
+</ul>
+        </article>
+
+        <div class="kpi-grid">
+          <div class="kpi reveal"><strong>10 meses</strong><span>media por nivel</span></div>
+          <div class="kpi reveal"><strong>4+ anos</strong><span>de experiencia docente</span></div>
+          <div class="kpi reveal"><strong>40+</strong><span>aprovacoes em exames</span></div>
+          <div class="kpi reveal"><strong>100%</strong><span>aulas online ao vivo</span></div>
+          <div class="kpi reveal"><strong>Suporte</strong><span>direto por WhatsApp</span></div>
+        </div>
+
+        <div class="benefits reveal">
+      <ul>
+  <li>Método comunicativo com foco em conversação, sem deixar de lado a gramática.</li>
+  <li>Materiais exclusivos para cada etapa, com áudios, vídeos e material extra.</li>
+  <li>Plano de estudo objetivo e acompanhamento individual.</li>
+  <li>Preparação completa para DELE/SIELE/CERTEA/DUCLE/CEI/CELU e vestibulares.</li>
+  <li>Certificado de conclusão nos programas aplicáveis. Avaliados pelo MEC.</li>
+</ul>
+        </div>
+
+<div class="promo reveal">
+  Vagas limitadas para novas turmas deste mês. Garanta sua vaga hoje.
 </div>
-  
+</div>
+</section>
 
-    <section id="process" aria-labelledby="process-title">
-      <h2 id="process-title">Como funciona</h2>
-      <div class="process-step"><div class="icon" aria-hidden="true">1</div><p>Agende aula experimental</p></div>
-      <div class="process-step"><div class="icon" aria-hidden="true">2</div><p>Diagnóstico e plano personalizado</p></div>
-      <div class="process-step"><div class="icon" aria-hidden="true">3</div><p>Aulas ao vivo + materiais</p></div>
-      <div class="process-step"><div class="icon" aria-hidden="true">4</div><p>Acompanhamento por WhatsApp</p></div>
-      <div class="process-step"><div class="icon" aria-hidden="true">5</div><p>Certificado ao finalizar o curso</p></div>
+<section id="process" class="section">
+  <div class="container">
+    <h2 class="section-title">Como funciona o seu plano</h2>
+    <p class="section-lead">
+      Um processo simples, com início rápido e metas claras para reduzir o abandono e aumentar resultados.
+    </p>
+
+    <div class="process-grid">
+      <article class="card process-step reveal"><b>1</b><p>Você agenda a aula experimental gratuita.</p></article>
+      <article class="card process-step reveal"><b>2</b><p>Faço seu diagnóstico de nível e objetivo.</p></article>
+      <article class="card process-step reveal"><b>3</b><p>Definimos um plano personalizado com carga semanal.</p></article>
+      <article class="card process-step reveal"><b>4</b><p>Aulas ao vivo com material prático aplicado.</p></article>
+      <article class="card process-step reveal"><b>5</b><p>Suporte por WhatsApp entre as aulas.</p></article>
+      <article class="card process-step reveal"><b>6</b><p>Acompanhamento de progresso e certificado final.</p></article>
+    </div>
+  </div>
+</section>
+    <section id="plans" class="section">
+      <div class="container">
+        <h2 class="section-title">Planos e cursos</h2>
+        <p class="section-lead">Escolha por objetivo e intensidade. Todos os pagamentos sao feitos em sistema seguro e formalizados por contrato.</p>
+        <div class="plans-grid">
+          <article class="card plan-card reveal">
+            <span class="pill">Gravado</span>
+            <h3>Plano Autonomia</h3>
+            <div class="price">12x R$ 105 (R$ 1.260)</div>
+            <p>12 meses</p>
+            <ul>
+              <li>100 videos gravados</li>
+              <li>Exercicios praticos</li>
+              <li>1 plantao de duvidas por mes (WhatsApp)</li>
+              <li>Certificado de conclusao</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Marcar aula experimental</a>
+          </article>
+          <article class="card plan-card featured reveal">
+            <span class="pill pill-hot">Mais escolhido</span>
+            <h3>Plano Essencial</h3>
+            <div class="price">10x R$ 200 (R$ 2.000)</div>
+            <p>10 meses (48 aulas) | grupo reduzido ate 5 alunos</p>
+            <ul>
+              <li>4 aulas mensais ao vivo (2h cada)</li>
+              <li>Material incluso (PDFs, audios e videos)</li>
+              <li>Lives de apoio</li>
+              <li>Certificado</li>
+              <li>Suporte via WhatsApp</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Marcar aula experimental</a>
+          </article>
+          <article class="card plan-card reveal">
+            <span class="pill">Individual VIP</span>
+            <h3>Plano Personalizado Individual (1:1)</h3>
+            <div class="price">10x R$ 280 (R$ 2.800)</div>
+            <p>10 meses (48 aulas)</p>
+            <ul>
+              <li>4 aulas mensais ao vivo individuais (2h cada)</li>
+              <li>Conteudo 100% adaptado ao aluno</li>
+              <li>Suporte VIP via WhatsApp</li>
+              <li>Certificado</li>
+              <li>Foco em fluencia pratica, conversacao real e dominio gramatical</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Marcar aula experimental</a>
+          </article>
+        </div>
+        <details class="table-collapse reveal">
+          <summary>Ver tabela completa de planos</summary>
+          <div class="table-wrap" aria-label="Tabela completa de planos">
+          <table>
+            <thead>
+              <tr>
+                <th>Modalidade / Curso</th>
+                <th>Preco no Cartao (R$)</th>
+                <th>Duracao</th>
+                <th>O que inclui</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Plano Autonomia (gravado)</td>
+                <td>12x R$ 105 (R$ 1.260)</td>
+                <td>12 meses</td>
+                <td>100 videos gravados, exercicios praticos, 1 plantao de duvidas por mes (WhatsApp), certificado de conclusao.</td>
+              </tr>
+              <tr>
+                <td>Plano Essencial (grupo reduzido - ate 5 alunos)</td>
+                <td>10x R$ 200 (R$ 2.000)</td>
+                <td>10 meses (48 aulas)</td>
+                <td>4 aulas mensais ao vivo (2h), material incluso (PDFs, audios e videos), lives de apoio, certificado, suporte via WhatsApp.</td>
+              </tr>
+              <tr>
+                <td>Plano Personalizado Individual (1:1)</td>
+                <td>10x R$ 280 (R$ 2.800)</td>
+                <td>10 meses (48 aulas)</td>
+                <td>4 aulas mensais ao vivo individuais (2h), conteudo 100% adaptado, suporte VIP via WhatsApp, certificado e foco em fluencia pratica.</td>
+              </tr>
+              <tr>
+                <td>Viva o Espanhol - Imersao Internacional</td>
+                <td>18x R$ 638,88 (R$ 11.500)</td>
+                <td>6 meses</td>
+                <td>3h de aula por semana, mentoria cultural individual, materiais exclusivos, certificado, viagem de imersao (Buenos Aires, Cusco/Machu Picchu, Santiago, Punta Cana e outros), bonus culturais.</td>
+              </tr>
+              <tr>
+                <td>Plano Certificacao Internacional (DELE / SIELE / outros)</td>
+                <td>12x R$ 91,66 (R$ 1.100)</td>
+                <td>3 meses</td>
+                <td>Treinamento nas 4 competencias (leitura, escrita, audicao e fala), estrategias praticas, simulados e feedback individual.</td>
+              </tr>
+              <tr>
+                <td>Dominio do Espanhol para Vestibular</td>
+                <td>12x R$ 75 (R$ 900)</td>
+                <td>3 meses</td>
+                <td>Preparacao para vestibulares, gramatica aplicada, compreensao de textos, simulados praticos e estrategias de prova.</td>
+              </tr>
+              <tr>
+                <td>Plano Intensivo de Espanhol - Do Zero a Fluencia</td>
+                <td>18x R$ 833,33 (R$ 15.000)</td>
+                <td>10 meses (255h)</td>
+                <td>5 dias por semana (2h/dia), do iniciante ao avancado (C2), conversacao acelerada, gramatica pratica, material incluso, acompanhamento individual e feedback constante.</td>
+              </tr>
+              <tr>
+                <td>Espanhol Gamificado (8 a 16 anos)</td>
+                <td>12x R$ 200 (R$ 2.400)</td>
+                <td>12 meses</td>
+                <td>Curso do zero ao A2, 4 aulas ao vivo por mes (2h), metodologia gamificada, 4 habilidades, conversacao guiada, materiais exclusivos, ambiente seguro, acompanhamento individual, suporte a familia e certificado.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+          <p class="table-note">Todos os pagamentos sao processados com seguranca via Asaas e formalizados por contrato.</p>
+        </details>
+        <h3 class="section-title" style="margin-top:1.55rem; font-size:1.38rem;">Produtos digitais e materiais</h3>
+        <div class="catalog-grid">
+          <article class="card catalog-card reveal">
+            <h3>Livro de Espanhol Basico + Intermediario + Avancado</h3>
+            <p>R$ 220 cada | R$ 550 combo</p>
+            <ul>
+              <li>200+ paginas</li>
+              <li>Audios, videos e exercicios</li>
+              <li>Alinhado ao SIELE</li>
+            </ul>
+          </article>
+          <article class="card catalog-card reveal">
+            <h3>Guia Gramatical Bilingue (vestibular)</h3>
+            <p>R$ 170</p>
+            <ul>
+              <li>Regras gramaticais</li>
+              <li>Exemplos praticos</li>
+              <li>Foco em exames</li>
+            </ul>
+          </article>
+          <article class="card catalog-card reveal">
+            <h3>Simulados DELE/SIELE (adaptados)</h3>
+            <p>R$ 110 cada pack | R$ 270 completo</p>
+            <ul>
+              <li>Simulados comentados</li>
+              <li>Pratica intensiva</li>
+            </ul>
+          </article>
+          <article class="card catalog-card reveal">
+            <h3>Ebook - Frases Uteis para Viagem</h3>
+            <p>R$ 60</p>
+            <ul>
+              <li>Expressoes praticas</li>
+              <li>Leitura rapida</li>
+            </ul>
+          </article>
+          <article class="card catalog-card reveal">
+            <h3>Apostila Cultural (Truco, Tango, Gastronomia etc.)</h3>
+            <p>R$ 60</p>
+            <ul>
+              <li>Conteudo cultural em PDF</li>
+            </ul>
+          </article>
+          <article class="card catalog-card reveal">
+            <h3>Pack 500 Filmes e Series em Espanhol</h3>
+            <p>R$ 60</p>
+            <ul>
+              <li>Lista curada</li>
+            </ul>
+          </article>
+          <article class="card catalog-card reveal">
+            <h3>Simuladores com legendas em portugues</h3>
+            <p>R$ 60</p>
+            <ul>
+              <li>Pratica guiada com apoio visual</li>
+            </ul>
+          </article>
+          <article class="card catalog-card reveal">
+            <h3>Girias e Frases Populares da Argentina</h3>
+            <p>R$ 90</p>
+            <ul>
+              <li>Dicionario pratico</li>
+            </ul>
+          </article>
+          <article class="card catalog-card reveal">
+            <h3>Livro de Espanhol para o Trabalho</h3>
+            <p>R$ 220</p>
+            <ul>
+              <li>200 paginas</li>
+              <li>Vocabulario profissional</li>
+            </ul>
+          </article>
+        </div>
+      </div>
     </section>
+    <section id="material" class="section">
+      <div class="container">
+        <h2 class="section-title">Material e aula demonstrativa</h2>
+        <p class="section-lead">Veja uma amostra real da metodologia antes de tomar sua decisão.</p>
 
-    <section id="testimonials" aria-labelledby="testimonials-title">
-      <h2 id="testimonials-title">Resultados & Depoimentos</h2>
-      <div class="testimonials-list">
-        <article class="testimonial-card" role="region" aria-label="Depoimento de Sandro Silva">
-          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Foto de Sandro Silva" onerror="this.style.display='none';" />
-          <div style="color: #FFD700; margin-bottom: 0.5rem;">⭐⭐⭐⭐⭐</div>
-          <p>"Passei no SIELE B2 graças às aulas com Bruno. Muito foco no que realmente importa para o exame."</p>
-          <div class="name">Sandro Silva • 28 anos, Policia</div>
-        </article>
-        <article class="testimonial-card" role="region" aria-label="Depoimento de Joana Costa">
-          <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Foto de Joana Costa" onerror="this.style.display='none';" />
-          <div style="color: #FFD700; margin-bottom: 0.5rem;">⭐⭐⭐⭐⭐</div>
-          <p>"Aprendi a falar para viagens, com confiança para me virar em qualquer país hispânico. 🇪🇸🇦🇷"</p>
-          <div class="name">Joana Costa • 33 anos, Publicitária</div>
-        </article>
-        <article class="testimonial-card" role="region" aria-label="Depoimento de Lucas Silva">
-          <img src="https://randomuser.me/api/portraits/men/72.jpg" alt="Foto de Lucas Silva" onerror="this.style.display='none';" />
-          <div style="color: #FFD700; margin-bottom: 0.5rem;">⭐⭐⭐⭐⭐</div>
-          <p>"As aulas VIP foram fundamentais para meu trabalho internacional. Recomendo muito! 🇲🇽"</p>
-          <div class="name">Lucas Silva • 41 anos, Consultor</div>
+        <article class="card demo-panel reveal">
+          <a class="btn btn-light demo-link" href="https://www.flipbookpdf.net/web/site/a26362bd20009a4a7e08450fec57f21b150b0d9b202509.pdf.html#page/1" target="_blank" rel="noopener">Abrir material completo</a>
+          <iframe class="demo-frame" src="https://www.flipbookpdf.net/web/site/a26362bd20009a4a7e08450fec57f21b150b0d9b202509.pdf.html" title="Aula demonstrativa" loading="lazy" allowfullscreen></iframe>
         </article>
       </div>
-      <div class="testimonial-cta">
-      <button onclick="window.open('https://www.instagram.com/stories/highlights/18427523725017133/', '_blank')">
-  Veja mais depoimentos
-</button>
-      </div>
     </section>
 
-    <section id="material" aria-labelledby="material-title">
-      <h2 id="material-title">Material & Demo</h2>
-      <div style="background: var(--cinza); padding: 1rem; border-radius: 8px; margin: 1rem 0; display: inline-block;">
-        <a href="https://www.flipbookpdf.net/web/site/a26362bd20009a4a7e08450fec57f21b150b0d9b202509.pdf.html#page/1" style="color: var(--azul); font-weight: 700; text-decoration: none;">
-          📚 Veja uma aula completa e nosso material exclusivo
+    <section id="testimonials" class="section">
+  <div class="container">
+    <h2 class="section-title">Resultados e depoimentos</h2>
+    <p class="section-lead">
+      Veja provas reais de alunos que evoluíram com acompanhamento direto e foco em resultados práticos.
+    </p>
+
+    <div class="proof-grid">
+      <article class="card proof-card reveal">
+        <div class="proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>
+          "Sandro Jansen conquistou o SIELE B2 com foco estratégico na prova, treino orientado e feedback individual."
+        </p>
+        <div class="proof-name">Sandro Jansen | Resultado em certificação SIELE B2</div>
+        <a class="proof-link" href="https://www.instagram.com/p/DJm78n0vQdY/" target="_blank" rel="noopener">
+          Ver depoimento no Instagram
         </a>
+      </article>
+
+      <article class="card proof-card reveal">
+        <div class="proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>
+          "Helano Medeiros falando espanhol em contexto internacional na OEA após treinamento com foco em comunicação real."
+        </p>
+        <div class="proof-name">Helano Medeiros | Espanhol aplicado em contexto profissional</div>
+        <a class="proof-link" href="https://www.instagram.com/p/DP4JUrLDs9u/" target="_blank" rel="noopener">
+          Assistir vídeo no Instagram
+        </a>
+      </article>
+
+      <article class="card proof-card reveal">
+        <div class="proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Mais provas sociais com alunos em viagens, carreira e exames internacionais.</p>
+        <div class="proof-name">Destaques com vários depoimentos e casos reais</div>
+        <a class="proof-link" href="https://www.instagram.com/stories/highlights/18427523725017133/" target="_blank" rel="noopener">
+          Abrir destaques de depoimentos
+        </a>
+      </article>
+    </div>
+
+    <article class="results-verified reveal">
+      <h3>Resultados verificados</h3>
+      <div class="results-grid">
+        <div class="result-item"><strong>+40</strong><span>alunos aprovados em exames</span></div>
+        <div class="result-item"><strong>4+ anos</strong><span>de experiência com brasileiros</span></div>
+        <div class="result-item"><strong>100% ao vivo</strong><span>aulas por Zoom e Google Meet</span></div>
       </div>
-      <div class="demo-flipbook">
-  <iframe 
-    src="https://www.flipbookpdf.net/web/site/a26362bd20009a4a7e08450fec57f21b150b0d9b202509.pdf.html"
-    width="100%" 
-    height="500" 
-    frameborder="0" 
-    allowfullscreen>
-  </iframe>
-</div>
-
-    <section id="faq" aria-labelledby="faq-title">
-      <h2 id="faq-title">Perguntas Frequentes</h2>
-      <details>
-        <summary>Duração do curso</summary>
-        <p>Cada nível (A1→A2, B1→B2, etc.) tem cerca de 85 horas-aula; ritmo comum: 2h/semana → cerca de 10 meses por nível.</p>
-      </details>
-      <details>
-        <summary>Férias e recesso</summary>
-        <p>Sem aulas de 10/12 a 16/01 e recesso na segunda semana de julho.</p>
-      </details>
-      <details>
-        <summary>Política de cancelamento</summary>
-        <p>Avise com 24h para reprogramar; faltas sem aviso contam como aula dada.</p>
-      </details>
-      <details>
-        <summary>Uso de imagem e gravação</summary>
-        <p>Não gravamos aulas sem seu consentimento; caso autorizem, pedimos autorização prévia.</p>
-      </details>
-        <details>
-    <summary>Preciso ter conhecimento prévio de espanhol?</summary>
-    <p>Não! As aulas começam do nível zero, mas se você já tiver algum conhecimento, fazemos um diagnóstico e adaptamos o plano para você.</p>
-  </details>
-  <details>
-    <summary>Posso fazer uma aula experimental gratuita?</summary>
-    <p>Sim! Você pode agendar sua primeira aula sem custo para conhecer a metodologia e já praticar comigo.</p>
-  </details>
-  <details>
-    <summary>As aulas são gravadas ou ao vivo?</summary>
-    <p>São 100% ao vivo, pela internet (Zoom ou Google Meet). Também forneço materiais em PDF, áudios e exercícios para revisar fora das aulas.</p>
-  </details>
-  <details>
-    <summary>Em quanto tempo consigo começar a falar espanhol?</summary>
-    <p>Meus alunos normalmente já conseguem se comunicar em situações simples (viagem, apresentações básicas) entre 2 e 3 meses de aula.</p>
-  </details>
-  <details>
-    <summary>Quais formas de pagamento aceitam?</summary>
-    <p>Você pode pagar via cartão de crédito, boleto ou PIX (pelo sistema seguro da Asaas).</p>
-  </details>
-  <details>
-    <summary>Recebo certificado?</summary>
-    <p>Sim, ofereço certificado digital de conclusão validado pelo MEC, válido como horas complementares em faculdades.</p>
-  </details>
-  <details>
-    <summary>Tenho suporte fora da aula?</summary>
-    <p>Sim! Você pode tirar dúvidas rápidas diretamente comigo via WhatsApp.</p>
-  </details>
-    </section>
-
-     <section id="planos-cursos" style="margin-bottom:3rem;">
-  <h2 style="text-align:center;font-family:'Red Hat Display',sans-serif;font-size:2rem;color:#1F3C88;margin-bottom:1.2rem;">
-    Planos e Cursos
-  </h2>
-  <div style="overflow-x:auto;">
-    <table style="width:100%;border-collapse:collapse;background:#fff;border-radius:14px;box-shadow:0 4px 16px rgba(31,60,136,0.07);margin-bottom:2rem;">
-      <thead style="background:#1F3C88;color:#fff;">
-        <tr>
-          <th style="padding:1rem;">Modalidade / Curso</th>
-          <th style="padding:1rem;">Preço no Pix (R$)</th>
-          <th style="padding:1rem;">Preço no Cartão (R$)</th>
-          <th style="padding:1rem;">Duração</th>
-          <th style="padding:1rem;">O que inclui</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Plano Autonomia (gravado)</td>
-          <td>999 à vista</td>
-          <td>12x R$ 105 (R$ 1.260)</td>
-          <td>Acesso por 1 ano</td>
-          <td>+100 vídeos gravados • Exercícios práticos • 1 plantão de dúvidas/mês (WhatsApp) • Certificado de conclusão</td>
-        </tr>
-        <tr>
-          <td>Plano Essencial (grupo reduzido)</td>
-          <td>2.200 à vista</td>
-          <td>12x R$ 200 (R$ 2.400)</td>
-          <td>10 meses (48 aulas)</td>
-          <td>4 aulas mensais ao vivo (2h cada) • Material incluso (PDFs, áudios e vídeos) • Lives de apoio • Certificado • Suporte via WhatsApp </td>
-        </tr>
-        <tr>
-          <td>Plano Personalizado individuais </td>
-          <td><span style="color:#b83414;">Fechamento imediato: R$ 3000 à vista</span></td>
-          <td>12x R$ 300 (R$ 3.600)</td>
-          <td>10 meses (48 aulas)</td>
-          <td>4 aulas mensais ao vivo individuais (2h cada) • Conteúdo 100% adaptado • Suporte VIP no WhatsApp • Certificado • Evolução garantida com foco fluência prática, conversação real e domínio gramatical• </td>
-        </tr>
-        <tr>
-          <td>Plano Viva el Español: Imersão Internacional</td>
-          <td>9.900 à vista</td>
-          <td>18x R$ 638,88 (R$ 11.500)</td>
-          <td>6 meses</td>
-          <td>3h/semana • Acompanhamento e mentoria cultural individual • Materiais exclusivos e acesso • Certificado e imersão internacional • Viagem de Imersão internacional (Destinos possíveis: 🇦🇷 Buenos Aires | 🇵🇪 Cusco / Machu Picchu | 🇨🇱 Santiago | 🇩🇴 Punta Cana |Entre outros) • Bônus culturais exclusivos</td>
-        </tr>
-        <tr>
-          <td>Plano Certificación Internacional (Curso DELE/SIELE)</td>
-          <td>1.000 à vista</td>
-          <td>12x R$ 91,66 (R$ 1.100)</td>
-          <td>3 meses</td>
-          <td>Treinamento completo nas quatro competências: leitura, escrita, audição e fala.• Estratégias práticas para cada parte da prova (tempo, estrutura, vocabulário e coerência). • Simulados • Estratégias de prova • Feedback individual</td>
-        </tr>
-        <tr>
-          <td>Dominio del Español para Vestibular</td>
-          <td>800 à vista</td>
-          <td>12x R$ 75 (R$ 900)</td>
-          <td>3 meses</td>
-          <td>Preparação para vestibulares • Gramática aplicada e compreensão de textos • Simulados práticos • Estratégias para otimizar o tempo durante a prova</td>
-        </tr>
-        <tr>
-          <td>Plano Intensivo de Espanhol – Do Zero à Fluência</td>
-          <td>13.000 à vista</td>
-          <td>18x R$ 833,33 (R$ 15.000)</td>
-          <td>10 meses (255h)</td>
-          <td>5 dias/semana 2 horas aula • Do nível iniciante ao C2 em 10 meses • Conversação acelerada • Aulas dinâmicas com foco na fluência real • Gramática prática • Material didático incluso • Acompanhamento individual e feedback constante </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h3 style="font-family:'Red Hat Display',sans-serif;font-size:1.4rem;color:#1F3C88;margin-bottom:1rem;text-align:center;">
-    Produtos Didáticos (Catálogo Digital)
-  </h3>
-  <div style="overflow-x:auto;">
-    <table style="width:100%;border-collapse:collapse;background:#fff;border-radius:14px;box-shadow:0 4px 16px rgba(31,60,136,0.07);">
-      <thead style="background:#1F3C88;color:#fff;">
-        <tr>
-          <th style="padding:1rem;">Produto</th>
-          <th style="padding:1rem;">Preço no Pix (R$)</th>
-          <th style="padding:1rem;">Preço no Cartão (R$)</th>
-          <th style="padding:1rem;">Duração</th>
-          <th style="padding:1rem;">O que inclui</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Livro Espanhol Básico + Intermediário + Avançado</td>
-          <td>250 cada / 700 combo</td>
-          <td>300 cada / 800 combo</td>
-          <td>Autoestudo</td>
-          <td>200+ páginas, áudios, vídeos, exercícios, alinhado SIELE</td>
-        </tr>
-        <tr>
-          <td>Guia Gramatical (bilíngue, vestibular)</td>
-          <td>300</td>
-          <td>350</td>
-          <td>Autoestudo</td>
-          <td>Regras gramaticais, exemplos, útil para exames</td>
-        </tr>
-        <tr>
-          <td>Simulados DELE/SIELE oficiais adaptados</td>
-          <td>200 cada pack / 500 completo</td>
-          <td>250 cada pack / 600 completo</td>
-          <td>Autoestudo</td>
-          <td>Simulados oficiais adaptados, prática intensiva</td>
-        </tr>
-        <tr>
-          <td>Ebook Frases Úteis para Viagem</td>
-          <td>50</td>
-          <td>60</td>
-          <td>Rápido</td>
-          <td>Expressões práticas, leitura fácil</td>
-        </tr>
-        <tr>
-          <td>Apostilla Cultural (Truco, Tango, Gastronomia, etc.)</td>
-          <td>50</td>
-          <td>60</td>
-          <td>Rápido</td>
-          <td>PDF rápido, curiosidades culturais</td>
-        </tr>
-        <tr>
-          <td>Pack 500 Filmes & Séries em Espanhol</td>
-          <td>50</td>
-          <td>60</td>
-          <td>Complementar</td>
-          <td>Lista completa de filmes e séries em espanhol</td>
-        </tr>
-      </tbody>
-    </table>
+    </article>
   </div>
 </section>
-      <div style="text-align: center; margin-top: 1rem; color: var(--azul); font-weight: 600;">
-        ✅ Todos os pagamentos são realizados de forma segura através do sistema Asaas e formalizados por meio de contrato. Não haverá qualquer cobrança adicional.
-      </div>
-    </section>
 
-   <section id="contact" aria-labelledby="contact-title">
-  <h2 id="contact-title">Contato & Agendamento</h2>
-  <div style="max-width:600px;margin:0 auto;text-align:center;">
-    <p>Preencha o formulário abaixo para agendar sua aula experimental. Você será redirecionado para o Google Forms:</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4casXEppQRS6pHih8AjZGqTAKcHvMWAxSVI7QBt0UKMfVvA/viewform?usp=dialog" 
-       target="_blank" rel="noopener" 
-       style="display:inline-block;background:#FFCD3C;color:#1F3C88;font-weight:700;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-size:1.2rem;box-shadow:0 4px 16px rgba(255,205,60,0.3);margin-top:1.5rem;">
-      👉 Agendar aula experimental
-    </a>
+
+
+  <section id="faq" class="section">
+  <div class="container">
+    <h2 class="section-title">Perguntas frequentes</h2>
+    <div class="faq-grid">
+
+      <details class="reveal">
+        <summary>Preciso ter conhecimento prévio de espanhol?</summary>
+        <p>Não. Começamos do zero ou ajustamos o curso ao seu nível atual, com diagnóstico inicial.</p>
+      </details>
+
+      <details class="reveal">
+        <summary>Posso fazer aula experimental gratuita?</summary>
+        <p>Sim. A primeira aula é para você conhecer a metodologia e receber uma orientação inicial.</p>
+      </details>
+
+      <details class="reveal">
+        <summary>As aulas são ao vivo ou gravadas?</summary>
+        <p>As aulas principais são ao vivo (Zoom ou Google Meet), com materiais extras para estudo fora da aula.</p>
+      </details>
+
+      <details class="reveal">
+        <summary>Em quanto tempo consigo começar a falar?</summary>
+        <p>Em média, entre 2 e 3 meses os alunos já conseguem se comunicar em situações simples.</p>
+      </details>
+
+      <details class="reveal">
+        <summary>Quais são as formas de pagamento?</summary>
+        <p>Cartão, boleto ou Pix, com processamento seguro e formalização por contrato.</p>
+      </details>
+
+      <details class="reveal">
+        <summary>Recebo certificado?</summary>
+        <p>Sim. Nos cursos aplicáveis, você recebe um certificado digital de conclusão.</p>
+      </details>
+
+      <details class="reveal">
+        <summary>Tenho suporte fora da aula?</summary>
+        <p>Sim. Dúvidas rápidas podem ser tratadas via WhatsApp durante o programa.</p>
+      </details>
+
+      <details class="reveal">
+        <summary>Como funciona o cancelamento e a remarcação?</summary>
+        <p>Com aviso prévio de 24h, a aula pode ser remarcada. Ausência sem aviso conta como aula realizada.</p>
+      </details>
+      <details class="reveal"><summary>Tenho pouco tempo para estudar. O curso funciona para minha rotina?</summary><p>Sim. O plano e personalizado com metas semanais e materiais objetivos para manter constancia mesmo com rotina corrida.</p></details>
+      <details class="reveal"><summary>Tenho vergonha de falar e travo na conversacao. Como voces trabalham isso?</summary><p>Trabalhamos com pratica guiada progressiva, correcoes em tempo real e situacoes reais para ganhar seguranca sem pressao.</p></details>
+      <details class="reveal"><summary>E se eu for totalmente iniciante?</summary><p>Sem problema. A aula experimental gratuita serve para diagnosticar seu nivel, apresentar a metodologia e te dar uma experiencia real de aula.</p></details>
+
+    </div>
   </div>
 </section>
+
+
+ <section id="contact" class="section">
+  <div class="container">
+    <h2 class="section-title">Contato e agendamento</h2>
+    <p class="section-lead">Clique para preencher o formulario e agendar sua aula experimental gratuita, conhecer a metodologia e ter uma experiencia real de aula.</p>
+
+    <article class="card contact-panel reveal">
+      <div>
+        <p><strong>Passo 1:</strong> Abra o formulário e envie seus dados.</p>
+        <p><strong>Passo 2:</strong> Você recebe o retorno para confirmar o horário.</p>
+        <p><strong>Passo 3:</strong> Iniciamos sua aula experimental com diagnóstico.</p>
+        <div class="contract-note">
+          Pagamento seguro, contrato e acompanhamento por WhatsApp.
+        </div>
+      </div>
+
+      <a class="btn btn-primary"
+         href="https://docs.google.com/forms/d/e/1FAIpQLSd4casXEppQRS6pHih8AjZGqTAKcHvMWAxSVI7QBt0UKMfVvA/viewform?usp=dialog"
+         target="_blank" rel="noopener">Agendar aula experimental gratuita</a>
+    </article>
+  </div>
+</section>
+
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <nav aria-label="Links do rodapé">
-      <a href="#about">Sobre</a>|
-      <a href="#services">Serviços</a>|
-      <a href="#prices">Preços</a>|
-      <a href="#testimonials">Depoimentos</a>|
-      <a href="#contact">Contato</a>|
-      <a href="#">Política de Privacidade (LGPD)</a>|
-      <a href="#">Termos</a>
-    </nav>
-    <p>CNPJ: 58062835000156 © 2024 Espanhol com Bruno</p>
-    <p>
-      Redes: 
-      <a href="https://www.instagram.com/espanol.bruno" target="_blank" rel="noopener">Instagram</a> | 
-      <a href="https://www.youtube.com/@EspanholcomBrunoYT" target="_blank" rel="noopener">YouTube</a> | 
-      <a href="mailto:brunoensaoluis@gmail.com">Email</a>
-    </p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-links">
+          <a href="#about">Sobre</a>
+          <a href="#process">Metodo</a>
+          <a href="#plans">Planos</a>
+          <a href="#material">Material</a>
+          <a href="#testimonials">Depoimentos</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contato</a>
+        </div>
+        <p style="margin:0.75rem 0 0;">CNPJ: 58062835000156 | &copy; 2026 Espanhol com Bruno</p>
+      </div>
+      <div class="footer-social" aria-label="Redes sociais">
+        <a href="https://www.instagram.com/espanol.bruno" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 1.8A3.96 3.96 0 0 0 3.8 7.75v8.5a3.96 3.96 0 0 0 3.95 3.95h8.5a3.96 3.96 0 0 0 3.95-3.95v-8.5a3.96 3.96 0 0 0-3.95-3.95h-8.5Zm8.95 1.35a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Z"/>
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/@EspanholcomBrunoYT" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M23 12s0-3.3-.42-4.9a3.2 3.2 0 0 0-2.25-2.25C18.73 4.4 12 4.4 12 4.4s-6.73 0-8.33.45A3.2 3.2 0 0 0 1.42 7.1C1 8.7 1 12 1 12s0 3.3.42 4.9a3.2 3.2 0 0 0 2.25 2.25c1.6.45 8.33.45 8.33.45s6.73 0 8.33-.45a3.2 3.2 0 0 0 2.25-2.25C23 15.3 23 12 23 12ZM10 15.5v-7l6 3.5-6 3.5Z"/>
+          </svg>
+        </a>
+        <a href="mailto:brunoensaoluis@gmail.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.2l9 5.4 9-5.4V7H3Zm18 10V9.5l-8.4 5a1 1 0 0 1-1.2 0L3 9.5V17h18Z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
   </footer>
 
-  <!-- WhatsApp flotante -->
-  <a href="https://wa.me/98986070648" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="28" height="28">
-      <path d="M20.52 3.486A11.942 11.942 0 0012.03 0c-6.627 0-12 5.373-12 12 0 2.12.554 4.096 1.606 5.841L0 24l5.957-1.555a11.953 11.953 0 005.927 1.547c6.627 0 12-5.373 12-12a11.97 11.97 0 00-3.364-8.506zm-8.48 16.798c-1.85 0-3.646-.5-5.217-1.447l-.37-.223-3.54.922.95-3.46-.236-.377a8.51 8.51 0 011.391-10.93 8.337 8.337 0 0111.803 1.176 8.446 8.446 0 01-5.28 14.96zm4.422-6.096l-1.248-1.18c-.165-.16-.395-.235-.604-.202a133.38 133.38 0 00-1.87.39c-.118.03-.253.108-.37.276-.108.144-.253.37-.452.645-.185.25-.38.36-.534.336l-.93-.174a5.38 5.38 0 01-2.086-1.34 8.095 8.095 0 01-1.338-2.059c-.223-.445 0-.79.115-.928l.86-1.04c.15-.198.264-.252.436-.255l1.234-.01c.178 0 .392.066.597.295l1.042 1.078c.182.189.353.26.554.239a3.39 3.39 0 001.966-1.252c.365-.454.546-.977.533-1.555-.01-.545-.469-1.29-2.23-2.5-.613-.389-1.08-.517-1.55-.52-.445-.005-.9.11-1.297.337-.423.25-1.022.965-1.022 2.364 0 1.397 1.182 2.855 1.348 3.055.166.198 2.328 3.56 5.77 4.688.803.344 1.424.544 1.913.698a4.959 4.959 0 002.327.176c.71-.163 2.22-.907 2.534-1.786.315-.885.315-1.644.22-1.785-.099-.143-.354-.229-.74-.4z"/>
+
+  <div class="mobile-cta" aria-label="Agendamento rapido">
+    <a class="btn btn-primary" href="#contact">Agendar aula experimental gratuita</a>
+  </div>
+  <div class="popup" id="promoPopup" aria-live="polite">
+    <button class="popup-close" id="closePromo" aria-label="Fechar">x</button>
+    <h4>Desconto especial</h4>
+    <p>Doadores de sangue do Maranhao tem condicao especial nas aulas. Fale comigo no WhatsApp.</p>
+    <a class="btn btn-primary" href="https://wa.me/98986070648?text=Oi%20Bruno!%20Sou%20doador%20de%20sangue%20e%20gostaria%20de%20saber%20sobre%20o%20desconto." target="_blank" rel="noopener">Falar no WhatsApp</a>
+  </div>
+
+  <a href="https://wa.me/98986070648" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Abrir conversa no WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M20.52 3.49A11.94 11.94 0 0 0 12.03 0C5.4 0 0 5.38 0 12a11.9 11.9 0 0 0 1.62 5.85L0 24l6.1-1.6a11.94 11.94 0 0 0 5.9 1.6c6.63 0 12-5.37 12-12 0-3.2-1.25-6.2-3.48-8.5Zm-8.5 18.8a9.9 9.9 0 0 1-5.05-1.38l-.37-.23-3.62.95.97-3.53-.24-.37a9.9 9.9 0 1 1 8.31 4.56Zm5.5-7.5c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.66.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07a8.1 8.1 0 0 1-2.39-1.48 8.9 8.9 0 0 1-1.64-2.04c-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.66-1.6-.9-2.2-.23-.55-.47-.48-.66-.49h-.57c-.2 0-.52.08-.8.38-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.1 4.48.72.3 1.28.47 1.72.6.72.23 1.37.2 1.88.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.08-.12-.28-.2-.58-.35Z" />
     </svg>
   </a>
 
-  <!-- Modal precios -->
-  <div class="modal-overlay" id="modalPrecos" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalPrecosTitle">
-    <div class="modal">
-      <h3 id="modalPrecosTitle">Planos e preços detalhados</h3>
-      <table role="table">
-        <thead>
-          <tr>
-            <th>Plano</th>
-            <th>Mensal</th>
-            <th>Pacote Completo</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Essencial</strong><br><small>Grupo • 10 meses</small></td>
-            <td>R$ 220/mês</td>
-            <td><strong>R$ 2.000 à vista</strong><br><small>ou 10x R$ 210</small></td>
-          </tr>
-          <tr>
-            <td><strong>Premium</strong><br><small>Individual • 10 meses</small></td>
-            <td>R$ 650/mês</td>
-            <td><strong>R$ 5.850 à vista</strong><br><small>ou 10x R$ 620</small></td>
-          </tr>
-          <tr>
-            <td><strong>Intensivo</strong><br><small>2 meses • 85h</small></td>
-            <td>-</td>
-            <td><strong>R$ 1.500</strong><br><small>ou 2x R$ 800</small></td>
-          </tr>
-        </tbody>
-      </table>
-      <div style="background: #f0f8ff; padding: 1rem; border-radius: 6px; margin-top: 1rem; text-align: center;">
-        <strong>💰 Economia de até R$ 650 no pacote completo!</strong><br>
-        <small>Garante sua vaga e não precisa renovar mensalmente</small>
-      </div>
-      <button class="modal-close" aria-label="Fechar modal">Fechar</button>
-    </div>
-  </div>
-
-  <!-- Pop-up Donantes de Sangre -->
-<div id="donante-popup" style="
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background: #fff;
-  border: 2px solid #FFCD3C;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-  border-radius: 12px;
-  padding: 1.2rem 1.5rem;
-  max-width: 320px;
-  z-index: 2000;
-  font-family: 'Inter', sans-serif;
-  display: none;
-  animation: slideIn 0.6s ease;
-">
-  <div style="font-size: 1.2rem; font-weight: 700; color: #1F3C88; margin-bottom: 0.4rem;">
-    ❤️ Desconto especial!
-  </div>
-  <p style="margin: 0; color: #4A5568; font-size: 1rem;">
-    Doadores de sangue do MARANHÃO têm <strong>desconto especial</strong> nas aulas!  
-    Pergunte pelo WhatsApp 💬
-  </p>
-  <button onclick="window.open('https://wa.me/98986070648?text=Oi%20Bruno!%20Sou%20doador%20de%20sangue%20e%20vi%20que%20há%20um%20desconto%20especial!','_blank')"
-    style="
-      margin-top: 0.8rem;
-      background: #FFCD3C;
-      color: #1F3C88;
-      border: none;
-      border-radius: 8px;
-      padding: 0.6rem 1rem;
-      font-weight: 600;
-      cursor: pointer;
-      font-family: 'Outfit', sans-serif;
-      transition: all 0.3s ease;
-    ">
-    Falar no WhatsApp
-  </button>
-  <div id="close-popup" style="position: absolute; top: 6px; right: 10px; cursor: pointer; color: #777; font-size: 1.2rem;">
-    ✖
-  </div>
-</div>
-
-<script>
-  // Mostrar el pop-up 3 segundos después de entrar
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      document.getElementById('donante-popup').style.display = 'block';
-    }, 3000);
-  });
-
-  // Cerrar el pop-up
-  document.getElementById('close-popup').addEventListener('click', () => {
-    document.getElementById('donante-popup').style.display = 'none';
-  });
-
-  // Animación
-  const style = document.createElement('style');
-  style.textContent = `
-    @keyframes slideIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  `;
-  document.head.appendChild(style);
-</script>
-
-
   <script>
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    mainNav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mainNav.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
       });
     });
 
-    // Add animation on scroll
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
+
+    const popup = document.getElementById("promoPopup");
+    const closePromo = document.getElementById("closePromo");
+    const popupDismissed = localStorage.getItem("promoPopupDismissed") === "true";
+
+    if (!popupDismissed) {
+      setTimeout(() => popup.classList.add("visible"), 2200);
+    }
+
+    closePromo.addEventListener("click", () => {
+      popup.classList.remove("visible");
+      localStorage.setItem("promoPopupDismissed", "true");
+    });
+    function normalizeLang(value) {
+      const lang = (value || "pt").toLowerCase();
+      if (lang.startsWith("es")) return "es";
+      if (lang.startsWith("en")) return "en";
+      return "pt";
+    }
+
+    function setLangButtons(lang) {
+      document.querySelectorAll(".lang-btn").forEach((btn) => {
+        btn.classList.toggle("active", btn.dataset.lang === lang);
+      });
+    }
+
+    function hideGoogleTranslateChrome() {
+      document.body.style.top = "0px";
+      document.querySelectorAll(".goog-te-banner-frame, iframe.goog-te-banner-frame, .goog-te-balloon-frame, #goog-gt-tt, .goog-tooltip, .goog-te-spinner-pos, .goog-te-menu-frame").forEach((el) => {
+        el.style.display = "none";
+      });
+    }
+
+    function applyLanguage(lang, retries = 12) {
+      const target = normalizeLang(lang);
+      document.documentElement.lang = target === "pt" ? "pt-BR" : target;
+      setLangButtons(target);
+      localStorage.setItem("site_lang", target);
+
+      const combo = document.querySelector(".goog-te-combo");
+      if (!combo) {
+        if (retries > 0) setTimeout(() => applyLanguage(target, retries - 1), 120);
+        return;
+      }
+
+      if (combo.value !== target) {
+        combo.value = target;
+        combo.dispatchEvent(new Event("change"));
+      }
+
+      setTimeout(hideGoogleTranslateChrome, 60);
+    }
+
+    window.googleTranslateElementInit = function () {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: "pt",
+          includedLanguages: "pt,es,en",
+          autoDisplay: false,
+          multilanguagePage: true
+        },
+        "google_translate_element"
+      );
+
+      const savedLang = normalizeLang(localStorage.getItem("site_lang") || "pt");
+      setTimeout(() => applyLanguage(savedLang), 140);
+      setInterval(hideGoogleTranslateChrome, 1000);
     };
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
-        }
-      });
-    }, observerOptions);
-
-    // Observe cards and testimonials
-    document.querySelectorAll('.card, .testimonial-card, .process-step').forEach(el => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(20px)';
-      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-      observer.observe(el);
+    document.querySelectorAll(".lang-btn").forEach((btn) => {
+      btn.addEventListener("click", () => applyLanguage(btn.dataset.lang));
     });
 
-    // Modal precios toggle
-    const btnVerPrecos = document.getElementById('btnVerPrecos');
-    const modalPrecos = document.getElementById('modalPrecos');
-    const btnCloseModal = modalPrecos.querySelector('.modal-close');
+    const initialLang = normalizeLang(localStorage.getItem("site_lang") || "pt");
+    setLangButtons(initialLang);
+    document.documentElement.lang = initialLang === "pt" ? "pt-BR" : initialLang;
 
-    btnVerPrecos.addEventListener('click', () => {
-      modalPrecos.style.display = 'flex';
-      modalPrecos.setAttribute('aria-hidden', 'false');
-      btnCloseModal.focus();
-    });
-    btnCloseModal.addEventListener('click', () => {
-      modalPrecos.style.display = 'none';
-      modalPrecos.setAttribute('aria-hidden', 'true');
-      btnVerPrecos.focus();
-    });
-    // Cerrar modal con Escape
-    window.addEventListener('keydown', (e) => {
-      if(e.key === 'Escape' && modalPrecos.style.display === 'flex') {
-        modalPrecos.style.display = 'none';
-        modalPrecos.setAttribute('aria-hidden', 'true');
-        btnVerPrecos.focus();
-      }
-    });
-
-    // Enviar contato (demo)
-    document.getElementById('contact-form').addEventListener('submit', (e) => {
-      e.preventDefault();
-      // Aquí conectar con backend o integración Asaas + WhatsApp via API/external
-      alert('Obrigado pelo contato! Em breve responderemos via WhatsApp.');
-      e.target.reset();
-    });
+    const gtScript = document.createElement("script");
+    gtScript.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+    gtScript.async = true;
+    document.body.appendChild(gtScript);
   </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97c7c90957f41cf5',t:'MTc1NzQzMjQzOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
