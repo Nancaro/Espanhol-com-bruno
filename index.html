@@ -509,6 +509,17 @@
     font-weight: 700;
   }
 
+  .popup-secondary {
+    border-color: rgba(29, 155, 86, 0.45);
+    box-shadow: 0 16px 42px rgba(11, 94, 49, 0.18);
+  }
+
+  .solidarity-note {
+    margin-top: 0.35rem;
+    font-size: 0.88rem;
+    color: var(--muted);
+  }
+
   .process-grid,
   .proof-grid,
   .plans-grid,
@@ -1542,9 +1553,17 @@
   </div>
   <div class="popup" id="promoPopup" aria-live="polite">
     <button class="popup-close" id="closePromo" aria-label="Fechar">x</button>
-    <h4>Desconto especial</h4>
-    <p>Doadores de sangue do Maranhao tem condicao especial nas aulas. Fale comigo no WhatsApp.</p>
+    <h4>&#10084;&#65039; Desconto especial para doadores de sangue</h4>
+    <p>Doadores de sangue do Maranhao tem desconto exclusivo nas aulas de espanhol. Uma forma de valorizar quem salva vidas &#128137;&#10084;&#65039;</p>
     <a class="btn btn-primary" href="https://wa.me/98986070648?text=Oi%20Bruno!%20Sou%20doador%20de%20sangue%20e%20gostaria%20de%20saber%20sobre%20o%20desconto." target="_blank" rel="noopener">Falar no WhatsApp</a>
+    <p class="solidarity-note">Valido mediante comprovacao de doacao.</p>
+  </div>
+  <div class="popup popup-secondary" id="solidarityPopup" aria-live="polite">
+    <button class="popup-close" id="closeSolidarity" aria-label="Fechar">x</button>
+    <h4>&#10024; Aprenda espanhol e ajude caes e gatos resgatados &#10024;</h4>
+    <p>&#128062; @patinhasmarimiau e Espanhol com Bruno fecharam uma parceria especial.</p>
+    <p><strong>Ao doar R$ 160, voce ajuda os bichinhos resgatados e recebe um curso completo de espanhol gratuitamente.</strong></p>
+    <a class="btn btn-primary" href="https://wa.me/98986070648?text=Oi%20Bruno!%20Quero%20saber%20detalhes%20das%20aulas%20e%20a%20disponibilidade%20da%20parceria%20com%20a%20Patinhas." target="_blank" rel="noopener">Perguntar detalhes no WhatsApp</a>
   </div>
 
   <a href="https://wa.me/98986070648" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Abrir conversa no WhatsApp">
@@ -1582,15 +1601,28 @@
 
     const popup = document.getElementById("promoPopup");
     const closePromo = document.getElementById("closePromo");
-    const popupDismissed = localStorage.getItem("promoPopupDismissed") === "true";
+    const solidarityPopup = document.getElementById("solidarityPopup");
+    const closeSolidarity = document.getElementById("closeSolidarity");
+    const promoPopupDismissed = localStorage.getItem("promoPopupDismissed") === "true";
+    const solidarityPopupDismissed = localStorage.getItem("solidarityPopupDismissed") === "true";
 
-    if (!popupDismissed) {
+    if (!promoPopupDismissed) {
       setTimeout(() => popup.classList.add("visible"), 2200);
+    } else if (!solidarityPopupDismissed) {
+      setTimeout(() => solidarityPopup.classList.add("visible"), 2200);
     }
 
     closePromo.addEventListener("click", () => {
       popup.classList.remove("visible");
       localStorage.setItem("promoPopupDismissed", "true");
+      if (!solidarityPopupDismissed) {
+        setTimeout(() => solidarityPopup.classList.add("visible"), 700);
+      }
+    });
+
+    closeSolidarity.addEventListener("click", () => {
+      solidarityPopup.classList.remove("visible");
+      localStorage.setItem("solidarityPopupDismissed", "true");
     });
     function normalizeLang(value) {
       const lang = (value || "pt").toLowerCase();
